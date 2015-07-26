@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/lr_upload_pic_info"
+                style="@style/LV_TableTop" >
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/tv_manifestNumber" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+                            
+                            <TextView
+                                android:id="@+id/tv_uploadPic_text1"
+                                style="@style/LV_TableTopInnersTV"
+                                android:text="@string/tv_uploadPic_text1" />
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/contract_project_num" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv_uploadPic_text2"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_uploadPic_text2" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/LV_TableTopDivide"
+                    android:contentDescription="@null" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/goods_hs" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv_uploadPic_text3"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_uploadPic_text3" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/goods_RM1I3_name" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+
+                            <TextView
+                                android:id="@+id/tv_uploadPic_text4"
+                                style="@style/LV_TableTopInnersTV"
+                                android:text="@string/tv_uploadPic_text4" />
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <ImageView
+                    style="@style/LV_TableTopDivide"
+                    android:contentDescription="@null" />
+                
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/remark" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <EditText
+                            android:id="@+id/et_uploadPic_remark"
+                            android:layout_width="0dp"
+        					android:layout_height="40dp"
+        					android:layout_marginTop="2dp"
+        					android:layout_marginLeft="5dp"
+        					android:layout_marginRight="5dp"
+        					android:paddingLeft="2dp"
+        					android:singleLine="true"
+        					android:scrollHorizontally="true"
+                            android:layout_weight="1"
+                            android:hint="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/LV_TableTopDivide"
+                    android:contentDescription="@null" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicSecond_show_1"
+                    style="@style/TAKEPHOTO_RELATION_TWO"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/show_btn_bg_down_edit" >
+
+                    <Button
+                        android:id="@+id/btn_uploadPicSecond_show_1"
+                        style="@style/BTN_TakeCameraToShowUp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicSecond_show_1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicSecond_show_1"
+                        android:gravity="center"
+                        android:text="@string/goods_package_pic"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/IB_uploadPic_takeCameraOne"
+                        style="@style/BTN_TakeCameraUp"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_uploadPic_second_1"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible" >
+
+                    <Gallery
+                        android:id="@+id/gl_RM1I3_goodsPackagePhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicSecond_show_2"
+                    style="@style/TAKEPHOTO_RELATION_TWO"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/show_btn_bg_up_edit" >
+
+                    <Button
+                        android:id="@+id/btn_uploadPicSecond_show_2"
+                        style="@style/BTN_TakeCameraToShowUp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicSecond_show_2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicSecond_show_2"
+                        android:gravity="center"
+                        android:text="@string/goods_pic"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/IB_uploadPic_takeCameraTwo"
+                        style="@style/BTN_TakeCameraUp"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_uploadPic_second_2"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <Gallery
+                        android:id="@+id/gl_RM1I3_goodsPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicSecond_show_3"
+                    style="@style/TAKEPHOTO_RELATION_TWO"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/show_btn_bg_up_edit" >
+
+                    <Button
+                        android:id="@+id/btn_uploadPicSecond_show_3"
+                        style="@style/BTN_TakeCameraToShowUp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicSecond_show_3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicSecond_show_3"
+                        android:gravity="center"
+                        android:text="@string/container_inner_pic"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/IB_uploadPic_takeCameraThree"
+                        style="@style/BTN_TakeCameraUp"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_uploadPic_second_3"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <Gallery
+                        android:id="@+id/gl_RM1I3_containerInnerPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicSecond_show_4"
+                    style="@style/TAKEPHOTO_RELATION_TWO"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/show_btn_bg_up_edit" >
+
+                    <Button
+                        android:id="@+id/btn_uploadPicSecond_show_4"
+                        style="@style/BTN_TakeCameraToShowUp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicSecond_show_4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicSecond_show_4"
+                        android:gravity="center"
+                        android:text="@string/goods_specification_model_pic"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/IB_uploadPic_takeCameraFour"
+                        style="@style/BTN_TakeCameraUp"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_uploadPic_second_4"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <Gallery
+                        android:id="@+id/gl_RM1I3_goodsSpecModelPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicSecond_show_5"
+                    style="@style/TAKEPHOTO_RELATION_TWO"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/show_btn_bg_up_edit" >
+
+                    <Button
+                        android:id="@+id/btn_uploadPicSecond_show_5"
+                        style="@style/BTN_TakeCameraToShowUp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicSecond_show_5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicSecond_show_5"
+                        android:gravity="center"
+                        android:text="@string/another_special_request_pic"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/IB_uploadPic_takeCameraFive"
+                        style="@style/BTN_TakeCameraUp"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_uploadPic_second_5"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <Gallery
+                        android:id="@+id/gl_RM1I3_anotherSpecialRequestPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicSecond_show_6"
+                    style="@style/TAKEPHOTO_RELATION_TWO"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/show_btn_bg_up_edit" >
+
+                    <Button
+                        android:id="@+id/btn_uploadPicSecond_show_6"
+                        style="@style/BTN_TakeCameraToShowUp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicSecond_show_6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicSecond_show_6"
+                        android:gravity="center"
+                        android:text="@string/scene_src_pic"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/IB_uploadPic_takeCameraSix"
+                        style="@style/BTN_TakeCameraUp"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_uploadPic_second_6"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <Gallery
+                        android:id="@+id/gl_RM1I3_sceneSrcPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_uploadVideoSecond_show_7"
+                    style="@style/TAKEPHOTO_RELATION_TWO"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/show_btn_bg_up_edit" >
+
+                    <Button
+                        android:id="@+id/btn_uploadVideoSecond_show_7"
+                        style="@style/BTN_TakeCameraToShowUp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadVideoSecond_show_7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadVideoSecond_show_7"
+                        android:gravity="center"
+                        android:text="@string/video"
+                        android:textSize="20sp" />
+
+                    <ImageButton
+                        android:id="@+id/IB_uploadVideo_takeVideo"
+                        style="@style/BTN_TakeCameraUp"
+                        android:contentDescription="@null" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_uploadVideo_second_7"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/iv_uploadPic_seventhOne"
+                        style="@style/TAKEPHOTO_IMAGE"
+                        android:contentDescription="@null"
+                        android:src="@drawable/show_demo3" />
+
+                    <ImageView
+                        android:id="@+id/iv_uploadPic_seventhTwo"
+                        style="@style/TAKEPHOTO_IMAGE"
+                        android:contentDescription="@null"
+                        android:src="@drawable/show_demo1" />
+
+                    <ImageView
+                        android:id="@+id/iv_uploadPic_seventhThree"
+                        style="@style/TAKEPHOTO_IMAGE"
+                        android:contentDescription="@null"
+                        android:src="@drawable/show_demo2" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_RM1I3P_save"
+            style="@style/Btn_Search"
+            android:layout_marginRight="20dp"
+            android:text="@string/saveImage" />
+
+        <Button
+            android:id="@+id/btn_RM1I3P_back"
+            style="@style/Btn_Search"
+            android:layout_marginRight="20dp"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</LinearLayout>

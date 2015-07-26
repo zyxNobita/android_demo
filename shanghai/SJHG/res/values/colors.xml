@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="blue">#174778</color>
+    <color name="white">#FFFFFF</color>
+    <color  name="chartbg" >#dae4ec</color>
+    <color  name="fontColor" >#9B11EE</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#c0c0c0</color>
+</resources>

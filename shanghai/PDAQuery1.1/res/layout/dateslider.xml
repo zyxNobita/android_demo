@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dateSliderMainLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout
+		android:id="@+id/dateSliderButLayout"
+	   	android:orientation="horizontal"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+	   	android:layout_marginTop="20dp" >
+	   	
+    	<Button 
+    		android:id="@+id/dateSliderOkButton" 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="60dp"
+	    	android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/btn_seletor"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+	    	android:text="完成" />
+    </LinearLayout>
+    
+</LinearLayout>

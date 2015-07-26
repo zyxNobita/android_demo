@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <!-- 菜单列 -->
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="270dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_menulayout"
+        android:orientation="vertical"
+        android:paddingRight="2dp" >
+
+        <!-- 搜索栏 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/menu_frame_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_editsearch"
+                android:drawableLeft="@drawable/edittext_search_image"
+                android:hint="@string/search_hint"
+                android:paddingLeft="15dip"
+                android:textSize="14dip" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/menu_frame_btnclean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@null"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:src="@drawable/btn_del"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/menu_frame_textinfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/menu_frame_menulist"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+    <!-- 填充菜单右侧资源 -->
+
+    <LinearLayout
+        android:id="@+id/menu_frame_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:background="@drawable/bg_menulayout">
+    </LinearLayout>
+
+</LinearLayout>

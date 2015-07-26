@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_notice1"
+            style="@style/tv_noticeLVItems"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_notice2"
+            style="@style/tv_noticeLVItems"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_notice3"
+            style="@style/tv_noticeLVItems"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_notice4"
+            style="@style/tv_noticeLVItems"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_notice5"
+            style="@style/tv_noticeLVItems"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_notice6"
+            style="@style/tv_noticeLVItems"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_notice7"
+            style="@style/tv_noticeLVItems"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <View style="@style/tableTopDivide" />
+
+</LinearLayout>

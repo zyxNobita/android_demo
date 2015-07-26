@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textview1"
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/custom_officer_name" />
+
+            <TextView
+                android:id="@+id/textview2"
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/check_batch" />
+
+            <TextView
+                android:id="@+id/textview3"
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/seize_batch" />
+
+            <TextView
+                android:id="@+id/textview4"
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/seize_rate" />
+        
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_send" />
+
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_sendRate" />
+
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_catchCert" />
+
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_catchTax" />
+
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_catchDellete" />
+
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_catchOther" />
+
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_aboutPower" />
+
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_aboutArmy" />
+
+            <TextView
+                style="@style/LV_ITEMS_H"
+                android:layout_width="150dp"
+                android:text="@string/tv_catchCase" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divide"
+            android:contentDescription="@null" />
+
+        <com.bai.demo.utils.MyListView
+            android:id="@+id/lv_RM3I3_right_layout_listView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.bai.demo.utils.MyListView>
+        
+        <View style="@style/LV_HorazitLine" />
+    </LinearLayout>
+
+</HorizontalScrollView>

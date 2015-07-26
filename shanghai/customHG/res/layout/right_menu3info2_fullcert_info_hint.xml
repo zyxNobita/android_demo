@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/lL_RM3I2_fullCert_info_hint_tableTop"
+            style="@style/LV_TableTop" >
+            
+            <LinearLayout style="@style/LV_TableTopRowLV" >
+                
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/custom_department"
+                    android:textSize="22sp" />
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                    
+                    <Spinner
+                        android:id="@+id/sp_RM3I2_fullCert_info_hint_spinnerOne"
+                        style="@style/LV_TableTopSPINNER"
+                        android:layout_weight="1" />
+                    
+                    <Spinner
+                        android:id="@+id/sp_RM3I2_fullCert_info_hint_spinnerTwo"
+                        style="@style/LV_TableTopSPINNER"
+                        android:layout_weight="1" />
+                    
+                    <Spinner
+                        android:id="@+id/sp_RM3I2_fullCert_info_hint_spinnerThree"
+                        style="@style/LV_TableTopSPINNER"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+              
+            <ImageView
+                android:contentDescription="@null"
+                style="@style/LV_TableTopDivide" />
+            
+            <LinearLayout style="@style/LV_TableTopRowLV" >
+                
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/near"
+                    android:textSize="22sp" />
+                
+                <Spinner
+                    android:id="@+id/spinner_RM3I2_fullCert_info_hint_day"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+                
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/day"
+                    android:textSize="22sp" />
+                
+                <Spinner
+                    android:id="@+id/spinner_RM3I2_fullCert_info_hint_inOrOut"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+                
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/fullCert_handle_document_state"
+                    android:textSize="22sp" />
+                
+                <Button
+                    android:id="@+id/btn_RM3I2_fullCertRefurbish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/icon_refurbish" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/lL_RM3I2_fullCert_info_hint_table"
+        style="@style/LV_TableTop"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_InfoHintTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/already_dispatch_no_fillOut_check_result_amount" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+                
+                <TextView
+                    android:id="@+id/tv_fillCert_ticket_text1"
+                    style="@style/LV_InfoHintInnersTV"
+                    android:text="@string/tv_fillCert_ticket_text1" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+        
+        <LinearLayout
+            style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_InfoHintTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/already_fillOut_check_result_amount" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+                
+                <TextView
+                    android:id="@+id/tv_fillCert_ticket_text2"
+                    style="@style/LV_InfoHintInnersTV"
+                    android:text="@string/tv_fillCert_ticket_text2" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+        
+        <LinearLayout
+            style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_InfoHintTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/total_move_document_amount" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+                
+                <TextView
+                    android:id="@+id/tv_fillCert_ticket_text3"
+                    style="@style/LV_InfoHintInnersTV"
+                    android:text="@string/tv_fillCert_ticket_text3" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+        
+        <LinearLayout
+            style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_InfoHintTV"
+                android:background="@drawable/table_left_top" />
+            
+            <TextView
+                style="@style/LV_InfoHintTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/already_handle_document_amount" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+                
+                <TextView
+                    android:id="@+id/tv_fillCert_ticket_text4"
+                    style="@style/LV_InfoHintInnersTV"
+                    android:text="@string/tv_fillCert_ticket_text4" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+        
+        <LinearLayout
+            style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_InfoHintTV"
+                android:background="@drawable/table_left_top" />
+            
+            <TextView
+                style="@style/LV_InfoHintTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/no_handle_document_amount" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+                
+                <TextView
+                    android:id="@+id/tv_fillCert_ticket_text5"
+                    style="@style/LV_InfoHintInnersTV"
+                    android:text="@string/tv_fillCert_ticket_text5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

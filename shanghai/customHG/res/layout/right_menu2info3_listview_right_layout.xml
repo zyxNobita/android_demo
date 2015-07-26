@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="150dp"
+                style="@style/LV_TV_ITEMS"
+                android:text="@string/declare_batch_num" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="151dp"
+                style="@style/LV_TV_ITEMS"
+                android:text="@string/check_batch_num" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="151dp"
+                style="@style/LV_TV_ITEMS"
+                android:text="@string/check_rate" />
+            
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="151dp"
+                style="@style/LV_TV_ITEMS"
+                android:text="@string/seize_batch_num" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="151dp"
+                style="@style/LV_TV_ITEMS"
+                android:text="@string/seize_rate" />
+            
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="151dp"
+                style="@style/LV_TV_ITEMS"
+                android:text="@string/month" />
+        </LinearLayout>
+        
+        <ImageView
+		    android:contentDescription="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divide" />
+        
+        <com.bai.demo.utils.MyListView
+            android:id="@+id/lv_RM2I3_right_layout_listView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.bai.demo.utils.MyListView>
+        
+        <View style="@style/LV_HorazitLine" />
+        
+    </LinearLayout>
+
+</HorizontalScrollView>

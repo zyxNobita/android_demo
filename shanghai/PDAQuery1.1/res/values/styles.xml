@@ -1,0 +1,131 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- 标题头样式 -->
+    <style name="titleTyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 车辆信息查询Items -->
+    <style name="ll_cardItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="tv_cardItem1" parent="ll_cardItem">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="tv_cardItem2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 公告信息查询 -->
+    <!-- ListView的Title样式 -->
+    <style name="tv_noticeLVTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="tv_noticeLVItems" parent="tv_noticeLVTitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="hs_ScrollView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <!-- 整车公告详细 -->
+    <style name="iv_noticeImage">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/no_pic</item>
+    </style>
+
+    <!-- 查验业务受理：拍照按钮 -->
+    <style name="BTN_takePicture">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/btn_select</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <!-- 模块Table样式 -->
+    <style name="tableTop">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/table_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Table中横线样式 -->
+    <style name="tableTopDivide">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:background">@drawable/linex</item>
+    </style>
+
+    <!-- Table中竖线样式 -->
+    <style name="tableTopVerDivide">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@drawable/verticalline</item>
+    </style>
+
+    <!-- ListView竖线样式 -->
+    <style name="lv_verticalLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#999999</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <!-- ListView横线样式 -->
+    <style name="lv_horazitLine">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginRight">0.5dp</item>
+        <item name="android:layout_marginLeft">0.5dp</item>
+        <item name="android:background">#999999</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+</resources>

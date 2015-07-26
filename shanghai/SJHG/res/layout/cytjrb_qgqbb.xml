@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/frameTitleFontColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/cybg" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left" >
+
+        <Button
+            android:id="@+id/searchbutton"
+            style="@style/searchBtn"
+            android:layout_gravity="left"
+            android:text="@string/search_text" />
+
+        <ImageButton
+            android:id="@+id/zoom"
+            style="@style/magnifyglass"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/chartArear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="220dp" />
+    </LinearLayout>
+
+    <!-- 这里产生具体数据 -->
+
+    <include
+        android:id="@+id/tgwzh_table"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="7dp"
+        layout="@layout/table" />
+
+</LinearLayout>

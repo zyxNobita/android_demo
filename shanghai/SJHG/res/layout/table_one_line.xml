@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_index_title"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/index_text"
+        style="@style/titleFontColor"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/sjbgcybg" />
+
+    <RelativeLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/index_text"
+        android:background="@drawable/bg_index_body" >
+
+        <include
+            android:id="@+id/table_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/table_one_line_title" />
+
+        <ImageView
+            android:id="@+id/table_divide"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/table_title"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/divide_popup" />
+
+        <ListView
+            android:id="@+id/table_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_divide"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

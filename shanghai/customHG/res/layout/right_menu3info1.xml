@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+ 	android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/table"
+        style="@style/LV_TableTop" >
+
+        <LinearLayout
+            style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_CheckTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/handle_state" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+
+                <Spinner
+                    android:id="@+id/sp_RM3I1_stateOne"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" 
+                    android:layout_height="36dp"
+                    android:background="@drawable/select_optionbg"
+                    android:layout_margin="2dp"
+                    android:layout_marginRight="10dp"/>
+                
+                <Spinner 
+                    android:id="@+id/sp_RM3I1_stateTwo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" 
+                    android:layout_height="36dp"
+                    android:background="@drawable/select_optionbg"
+                    android:layout_margin="2dp"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/imports_exports" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/sp_RM3I1_inAndOut"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+
+        <LinearLayout
+           style="@style/LV_TableTopRowLV">
+
+            <TextView
+                style="@style/LV_CheckTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/check_result_input_time" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2" >
+
+                <EditText
+                    android:id="@+id/et_RM3I1_timeStart"
+                    style="@style/LV_TableTopET"
+                    android:layout_weight="1"
+                    android:hint="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to" />
+
+                <EditText
+                    android:id="@+id/et_RM3I1_timeStop"
+                    style="@style/LV_TableTopET" 
+                    android:layout_weight="1"
+                    android:hint="@null" />
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="26dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LV_Search" >
+
+        <Button
+            android:id="@+id/btn_menu3Info1_submit"
+            style="@style/Btn_Search" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu3info1_listview" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_rightMenu3Info1_llSecond_back"
+            style="@style/Btn_Search"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</LinearLayout>

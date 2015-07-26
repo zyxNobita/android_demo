@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_top" >
+        
+        <LinearLayout
+            android:id="@+id/ll_changeUserPsw_return"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+	        <ImageView
+	            android:layout_width="66dp"
+	            android:layout_height="35dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_gravity="center"
+	            android:background="@drawable/dot_arrowl"
+	            android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_changeUserPsw_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/titleTyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户密码修改" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_changeUserPswTable"
+        style="@style/tableTop"
+        android:layout_below="@id/rl_changeUserPsw_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户名：" />
+
+            <EditText
+                android:id="@+id/et_changeUserPsw_userName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/login_selector"
+                android:hint="民警号"
+                android:inputType="text"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/tableTopDivide"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="原密码：" />
+
+            <EditText
+                android:id="@+id/et_changeUserPsw_oldPsw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/login_selector"
+                android:hint="6-12位字符"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/tableTopDivide"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="新密码：" />
+
+            <EditText
+                android:id="@+id/et_changeUserPsw_newPsw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/login_selector"
+                android:hint="6-12位字符"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/tableTopDivide"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="确认密码：" />
+
+            <EditText
+                android:id="@+id/et_changeUserPsw_surePsw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/login_selector"
+                android:hint="6-12位字符"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/tableTopDivide"
+            android:contentDescription="@null" />
+
+        <Button
+            android:id="@+id/btn_sureChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg2"
+            android:text="确认修改"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_changeUserPsw_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_blue"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/ll_changeUsePsw_exit"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imgBtn_changeUserPsw_exit"
+                android:layout_width="95dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/return_off"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

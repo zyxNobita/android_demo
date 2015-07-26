@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/titleSpan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/titleStr"
+                style="@style/frameTitleFontColor"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="@string/jckhwzl" />
+
+            <ImageView
+                android:id="@+id/favImg"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/nofav"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/zlbutton"
+                android:layout_width="60dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/all_selector"
+                android:text="@string/allCount" />
+
+            <Button
+                android:id="@+id/jkbutton"
+                android:layout_width="90dp"
+                android:layout_height="38dp"
+                android:background="@drawable/jk"
+                android:text="@string/jk" />
+
+            <Button
+                android:id="@+id/ckbutton"
+                android:layout_width="90dp"
+                android:layout_height="38dp"
+                android:background="@drawable/ck"
+                android:text="@string/ck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chartArear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/chartArearWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+             />
+    </LinearLayout>
+
+</LinearLayout>

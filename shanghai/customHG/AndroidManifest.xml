@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bai.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- 定义适配多屏幕 -->
+    <supports-screens android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+    
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- android:name=".utils.OverAllVariable"
+        android:allowBackup="true" -->
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.bai.demo.entity.WelcomeActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主界面 -->
+        <activity
+            android:name="com.bai.demo.main.FrameDemoActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!-- 扫描条码界面 -->
+        <activity
+            android:name="com.bai.demo.main.BarCodeScannerActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!-- 登陆界面 -->
+        <activity
+            android:name="com.bai.demo.entity.LoginActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 图片的缩放界面 -->
+        <activity
+            android:name="com.bai.demo.zoomImage.ToImageZoomActivity"
+            android:label="@string/pic_zoom"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        
+        <!-- 测试页面：测试数据库功能 -->
+         <activity
+            android:name="com.bai.demo.onlyTest.TestCustomDB"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+</manifest>

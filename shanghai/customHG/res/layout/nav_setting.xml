@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:scrollbars="vertical" >
+
+    <TextView
+        android:id="@+id/nav_title7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/nav_title7"
+        android:textColor="@color/skyblue"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/divideimg1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/divider_blue"
+        android:contentDescription="@null" />
+
+    <include
+        android:id="@+id/Setting_info1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/nav_item" />
+
+    <ImageView
+        android:id="@+id/divideimg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/divider_horizontal_bright"
+        android:contentDescription="@null" />
+
+    <include
+        android:id="@+id/Setting_info2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/nav_item" />
+
+</LinearLayout>

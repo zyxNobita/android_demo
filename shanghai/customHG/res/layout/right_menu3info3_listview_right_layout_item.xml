@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textview1"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview2"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview3"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview4"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview5"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview6"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview7"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview8"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview9"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview10"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview11"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview12"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview13"
+        style="@style/LV_ITEMS_H"
+        android:layout_width="150dp" />
+
+</LinearLayout>

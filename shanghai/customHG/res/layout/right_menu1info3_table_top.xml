@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_RM1I3_tableTop"
+    style="@style/LV_TableTop" >
+    
+    <LinearLayout style="@style/LV_TableTopRowLV" >
+        
+        <TextView
+            style="@style/LV_TableTopTV"
+            android:background="@drawable/table_left_top"
+            android:text="@string/customNum" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            
+            <TextView
+                android:id="@+id/tv_RM1I3_text1"
+                style="@style/LV_TableTopInnersTV"
+                android:text="" />
+        </LinearLayout>
+        
+        <TextView
+            style="@style/LV_TableTopTV"
+            android:background="@drawable/table_normal"
+            android:text="@string/management_unit" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            
+            <TextView
+                android:id="@+id/tv_RM1I3_text6"
+                style="@style/LV_TableTopInnersTV"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:contentDescription="@null"
+        style="@style/LV_TableTopDivide" />
+    
+    <LinearLayout style="@style/LV_TableTopRowLV" >
+        
+        <TextView
+            style="@style/LV_TableTopTV"
+            android:background="@drawable/table_normal"
+            android:text="@string/transport_way" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            
+            <TextView
+                android:id="@+id/tv_RM1I3_text7"
+                style="@style/LV_TableTopInnersTV"
+                android:text="" />
+        </LinearLayout>
+        
+        <TextView
+            style="@style/LV_TableTopTV"
+            android:background="@drawable/table_normal"
+            android:text="@string/transport_tool_name" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            
+            <TextView
+                android:id="@+id/tv_RM1I3_text8"
+                style="@style/LV_TableTopInnersTV"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:contentDescription="@null"
+        style="@style/LV_TableTopDivide" />
+    
+    <LinearLayout style="@style/LV_TableTopRowLV" >
+        
+        <TextView
+            style="@style/LV_TableTopTV"
+            android:background="@drawable/table_normal"
+            android:text="@string/transport_num" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            
+            <TextView
+                android:id="@+id/tv_RM1I3_text9"
+                style="@style/LV_TableTopInnersTV"
+                android:text="" />
+        </LinearLayout>
+        
+        <TextView
+            style="@style/LV_TableTopTV"
+            android:background="@drawable/table_normal"
+            android:text="@string/receipt_unit" />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            
+            <TextView
+                android:id="@+id/tv_RM1I3_text10"
+                style="@style/LV_TableTopInnersTV"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

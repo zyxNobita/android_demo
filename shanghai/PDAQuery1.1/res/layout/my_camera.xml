@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <SurfaceView android:id="@+id/surfaceview"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        />
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        
+
+        <Button android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="对焦"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_select"
+            android:onClick="autofoucs"/>
+        
+        <Button android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="拍照"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_select"
+            android:onClick="takepicture"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/table"
+        style="@style/LV_TableTop" >
+
+        <LinearLayout style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/upload_start_time" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/et_menu1Info4_uploadTimeStart"
+                    android:layout_weight="1"
+                    style="@style/LV_TableTopET"
+                    android:hint="@null" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/upload_end_time" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/et_menu1Info4_uploadTimeStop"
+                    android:layout_weight="1"
+                    style="@style/LV_TableTopET"
+                    android:hint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+
+        <LinearLayout style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_left_bottom"
+                android:text="@string/tv_manifestNumber" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/et_RM1I4_orderNumber"
+                    android:layout_weight="1"
+                    style="@style/LV_TableTopET"
+                    android:hint="@null" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/upload_person_num" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/et_RM1I4_uploadPeopleNumber"
+                    android:layout_weight="1"
+                    style="@style/LV_TableTopET"
+                    android:hint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <LinearLayout
+        style="@style/LV_Search"
+        android:layout_marginRight="5dp">
+
+         <Button
+            android:id="@+id/btn_menu1Info4_submit"
+            style="@style/Btn_Search" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu1info4_listview" />
+
+</LinearLayout>

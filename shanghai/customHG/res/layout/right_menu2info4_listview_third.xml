@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_RM2I4_lv_three"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        style="@style/LL_ShowResultTitle" >
+
+        <TextView
+            style="@style/TV_ShowResultTitle"
+            android:text="@string/search_result" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_RM2I4_lv_main_leftThird"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_RM2I4_lv_main_rightThird"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </LinearLayout>
+    </LinearLayout>
+ <!-- 分页按钮 <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_gravity="center"
+	    >
+	    <TextView 
+	    android:id="@+id/tv_pageAgo3"
+	     android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginRight="50dp"
+	    android:background="@drawable/icon_agopage" />
+	
+	<TextView 
+	    android:id="@+id/tv_pageNext3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginRight="50dp"
+	    android:background="@drawable/icon_nextpage" />
+	</LinearLayout>-->
+	
+</LinearLayout>

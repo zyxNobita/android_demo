@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_input_background" >
+
+        <LinearLayout
+            android:id="@+id/ll_login_userName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="60dp" >
+
+            <TextView
+                style="@style/WAndH_wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="10dip"
+                android:text="@string/log_user"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_usernameValue"
+                style="@style/Et_login"
+                android:background="@drawable/login_et_bg"
+                android:hint="@string/et_loginUserNameHint" />            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_userPWD"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_login_userName"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/password_text"
+                style="@style/WAndH_wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="10dip"
+                android:text="@string/log_pass"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/tv_passwordValue"
+                android:inputType="textPassword"
+                android:background="@drawable/login_et_bg"
+                android:hint="@string/et_loginPWDHint"
+               	style="@style/Et_login" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_login_userPWD"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_loginBtn"
+               	style="@style/Btn_login"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_login_left_sure_seletor"
+                android:text="@string/log_txt"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_quitBtn"
+              	style="@style/Btn_login"
+                android:background="@drawable/btn_login_right_sure_seletor"
+                android:text="@string/log_clear"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

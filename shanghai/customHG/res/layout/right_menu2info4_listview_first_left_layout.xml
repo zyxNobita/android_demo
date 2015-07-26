@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="250dp"
+        style="@style/LV_TV_ITEMS"
+        android:text="@string/tv_manifestNumber" />
+    
+    <ImageView
+		android:contentDescription="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divide" />
+    
+    <com.bai.demo.utils.MyListView
+        android:id="@+id/lv_RM2I4_left_layout_listViewFirst"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="none" >
+    </com.bai.demo.utils.MyListView>
+    
+    <View style="@style/LV_HorazitLine" />
+    
+</LinearLayout>

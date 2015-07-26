@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.tydic.mobile.pdarequery"
+    android:versionCode="2"
+    android:versionName="1.7" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 关于软件信息 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.AboutSoftwareInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 查验业务受理 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.BusinessAcceptanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 工作台账统计 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.JobAccountingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 车辆信息查询 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.QueryCarInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 公告信息查询 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.QueryNoticeInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 公告信息查询:整车公告信息 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.NoticeInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 公告信息查询：地盘 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.QueryNoticeChassisActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 公告信息查询：地盘详细信息 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.NoticeChassisInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 用户密码修改 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.activity.UserPasswordChangeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 查验业务受理:扫描条码 -->
+        <activity android:name="cn.tydic.mobile.pdarequery.tools.BarCodeScannerActivity" >
+        </activity>
+        <!-- 查验业务受理:自定义大小的拍照 -->
+        <activity android:name="cn.tydic.mobile.pdarequery.tools.MyCameraActivity" >
+        </activity>
+        <!-- 公告信息查询:图片的缩放 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.tools.PicZoomActivity"
+            android:label="@string/pic_zoom"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <!-- 查验业务受理：图片的缩放 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.tools.LocalPicZoomActivity"
+            android:label="@string/pic_zoom"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <!-- 查验业务受理：扫描条形码 -->
+        <activity
+            android:name="cn.tydic.Zxing.camera.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- 查验业务受理：图片的剪切 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.tools.RectPhoto"
+            android:screenOrientation="portrait" />
+        <!-- 图片的缩放功能 -->
+        <activity
+            android:name="cn.tydic.mobile.pdarequery.image.ToImageZoomActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

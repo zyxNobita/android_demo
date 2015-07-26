@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/frameTitleFontColor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sszzl" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/sjbutton"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_selector"
+            android:text="@string/sj" />
+
+        <Button
+            android:id="@+id/searchbutton"
+            android:layout_width="80dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/sjbutton"
+            android:background="@drawable/button_selector"
+            android:text="@string/search_text" />
+
+        <ImageButton
+            android:id="@+id/btn_bigger"
+            android:layout_width="45dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_selector"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_zoomin" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/sszg"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/left_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:layout_marginRight="10dp"
+        layout="@layout/left_bottom" />
+
+</LinearLayout>

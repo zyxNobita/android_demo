@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+   
+    <TextView
+        android:id="@+id/tgwzh_gqdm"
+        style="@style/itemFontColor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tgwzh_jgs"
+        style="@style/itemFontColor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tgwzh_jds"
+        style="@style/itemFontColor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tgwzh_bkcys"
+        style="@style/itemFontColor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tgwzh_bkcyl"
+        style="@style/itemFontColor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tgwzh_bkchs_baohan"
+        style="@style/itemFontColor"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tgwzh_bkchl_baohan"
+        style="@style/itemFontColor"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tgwzh_bkchs_buhan"
+        style="@style/itemFontColor"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tgwzh_bkchl_buhan"
+        style="@style/itemFontColor"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+</LinearLayout>

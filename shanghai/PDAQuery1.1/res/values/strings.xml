@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PDA查验系统</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scannerResult">扫描中……</string>
+    <string name="pic_zoom">图片缩放</string>
+
+    <!-- 主界面所需字段 -->
+    <string name="chayanyewushouli">查验业务受理</string>
+    <string name="cheliangxinxichaxun">车辆信息查询</string>
+    <string name="gonggaoxinxichaxun">公告信息查询</string>
+    <string name="gongzuotaizhangtongji">工作台帐统计</string>
+    <string name="yonghumimaxiugai">用户密码修改</string>
+    <string name="guanyuruanjianxinxi">关于软件信息</string>
+
+    <string-array name="mainlistname">
+        <item>查验业务受理</item>
+        <item>车辆信息查询</item>
+        <item>公告信息查询</item>
+        <item>工作台帐统计</item>
+        <item>用户密码修改</item>
+        <item>关于软件信息</item>
+    </string-array>
+    <string-array name="baGvContent">
+        <item>车辆识别代号</item>
+        <item>轮胎完好情况</item>
+        <item>具有行驶记录功能的卫星定位装置</item>
+        <item>发动机型号/号码</item>
+        <item>三角警告牌</item>
+        <item>车身外观标识</item>
+        <item>车辆品牌/型号</item>
+        <item>校车标志灯</item>
+        <item>学生/照管人员座椅/位</item>
+        <item>车身颜色</item>
+        <item>停车指示标志</item>
+        <item>汽车安全带</item>
+        <item>核定载人数</item>
+        <item>应急出口/应急锤</item>
+        <item>车内外录像监控系统</item>
+        <item>车辆类型</item>
+        <item>干粉灭火器</item>
+        <item>辅助倒车装置</item>
+        <item>号牌/车辆外观形状</item>
+        <item>急救箱</item>
+        <item>校车标牌</item>
+    </string-array>
+
+    <!-- 模块网络接口配置 -->
+    <string name="Connection_MethodName">iInterface</string>
+    <string name="Connection_Webservice">zwapp/service/IServicePro</string>
+    <string name="servername">服务器地址（请勿随意更改）</string>
+    <!-- 模块文字配置信息 -->
+    <!-- 车辆信息查询 -->
+    <string name="tv_head1">号牌种类：</string>
+    <string name="spn_promat">请选择</string>
+    <string name="tv_head2">号牌号码：</string>
+    <string name="tv_head2Hint">请输入号牌号码</string>
+    <string name="tv_search">查询</string>
+    <string name="tv_cloce">退出</string>
+    <string name="tv_carTitle">车辆信息查询结果</string>
+    <string name="tv_carItem1">号牌种类:</string>
+    <string name="tv_carItem2">身份证明名称:</string>
+    <string name="tv_carItem3">号牌号码:</string>
+    <string name="tv_carItem4">机动车所有人:</string>
+    <string name="tv_carItem5">中文品牌:</string>
+    <string name="tv_carItem6">初次登录日期:</string>
+    <string name="tv_carItem7">车辆型号:</string>
+    <string name="tv_carItem8">检验有效期止:</string>
+    <string name="tv_carItem9">英文品牌:</string>
+    <string name="tv_carItem10">强制报销期止:</string>
+    <string name="tv_carItem11">国产/进口:</string>
+    <string name="tv_carItem12">管理辖区:</string>
+    <string name="tv_carItem13">车身颜色:</string>
+    <string name="tv_carItem14">机动车状态:</string>
+    <string name="tv_carItem15">使用性质:</string>
+    <string name="tv_carItem16">是否抵押:</string>
+    <string name="tv_carItem17">身份证明号码:</string>
+    <string name="tv_carItem18">车辆用途:</string>
+    <string name="tv_carItem19">制造国:</string>
+    <string name="tv_carItem20">轴数:</string>
+    <string name="tv_carItem21">车辆识别号:</string>
+    <string name="tv_carItem22">轴距:</string>
+    <string name="tv_carItem23">发动机号:</string>
+    <string name="tv_carItem24">前轮距:</string>
+    <string name="tv_carItem25">车辆类型:</string>
+    <string name="tv_carItem26">后轮距:</string>
+    <string name="tv_carItem27">发动机型号:</string>
+    <string name="tv_carItem28">车胎规格:</string>
+    <string name="tv_carItem29">燃料种类:</string>
+    <string name="tv_carItem30">车胎数:</string>
+    <string name="tv_carItem31">排量:</string>
+    <string name="tv_carItem32">总质量:</string>
+    <string name="tv_carItem33">功率:</string>
+    <string name="tv_carItem34">整备质量:</string>
+    <string name="tv_carItem35">转向方式:</string>
+    <string name="tv_carItem36">核定载质量:</string>
+    <string name="tv_carItem37">车外廊长:</string>
+    <string name="tv_carItem38">核定载客:</string>
+    <string name="tv_carItem39">车外廊宽:</string>
+    <string name="tv_carItem40">准牵引总质量:</string>
+    <string name="tv_carItem41">车外廊高:</string>
+    <string name="tv_carItem42">驾驶室前排载客人数:</string>
+    <string name="tv_carItem43">货箱内部长度:</string>
+    <string name="tv_carItem44">驾驶室后排载客人数:</string>
+    <string name="tv_carItem45">货箱内部高度:</string>
+    <string name="tv_carItem46">出厂日期:</string>
+    <string name="tv_carItem47">货箱内部宽度:</string>
+    <string name="tv_carItem48">底盘合格证编号:</string>
+    <string name="tv_carItem49">钢板弹簧片数:</string>
+    <!-- 公告信息查询 -->
+    <string name="tv_noticeHeadHint">请输入车辆型号...</string>
+    <string name="tv_noticeHeadTitle1">车辆品牌(中文)</string>
+    <string name="tv_noticeHeadTitle2">车辆型号</string>
+    <string name="tv_noticeHeadTitle3">发动机型号</string>
+    <string name="tv_noticeHeadTitle4">识别代号序列</string>
+    <string name="tv_noticeHeadTitle5">车辆类型</string>
+    <string name="tv_noticeHeadTitle6">公告发布日期</string>
+    <string name="tv_noticeHeadTitle7">是否允许注册</string>
+    <string name="tv_AddMoreData">加载更多数据</string>
+    <!-- 公告信息查询_整车公告详细 -->
+    <string name="tv_NOTICITITLE">公告信息查询_整车公告详细</string>
+    <string name="tv_noticeChassis">整车底盘</string>
+    <string name="tv_noticeItem1">整车公告编号:</string>
+    <string name="tv_noticeItem2">核定载质量:</string>
+    <string name="tv_noticeItem3">车辆品牌(中文):</string>
+    <string name="tv_noticeItem4">准牵引总质量:</string>
+    <string name="tv_noticeItem5">车辆品牌(英文):</string>
+    <string name="tv_noticeItem6">核定载客:</string>
+    <string name="tv_noticeItem7">车辆型号:</string>
+    <string name="tv_noticeItem8">驾驶室前排载客数:</string>
+    <string name="tv_noticeItem9">发动机型号:</string>
+    <string name="tv_noticeItem10">驾驶室后排载客数:</string>
+    <string name="tv_noticeItem11">识别代号序列:</string>
+    <string name="tv_noticeItem12">底盘ID:</string>
+    <string name="tv_noticeItem13">车辆类型:</string>
+    <string name="tv_noticeItem14">环保达标情况:</string>
+    <string name="tv_noticeItem15">制造国:</string>
+    <string name="tv_noticeItem16">公告发布类型:</string>
+    <string name="tv_noticeItem17">转向形式:</string>
+    <string name="tv_noticeItem18">备注:</string>
+    <string name="tv_noticeItem19">燃料种类:</string>
+    <string name="tv_noticeItem20">车辆制造企业:</string>
+    <string name="tv_noticeItem21">排量:</string>
+    <string name="tv_noticeItem22">公告发布日期:</string>
+    <string name="tv_noticeItem23">功率:</string>
+    <string name="tv_noticeItem24">免检标记:</string>
+    <string name="tv_noticeItem25">车外廊长:</string>
+    <string name="tv_noticeItem26">撤销生效日期:</string>
+    <string name="tv_noticeItem27">车外廊宽:</string>
+    <string name="tv_noticeItem28">底盘企业及型号:</string>
+    <string name="tv_noticeItem29">车外廊高:</string>
+    <string name="tv_noticeItem30">是否允许注册:</string>
+    <string name="tv_noticeItem31">货箱内部长度:</string>
+    <string name="tv_noticeItem32">公告生效日期:</string>
+    <string name="tv_noticeItem33">货箱内部宽度:</string>
+    <string name="tv_noticeItem34">撤销公告发布日期:</string>
+    <string name="tv_noticeItem35">货箱内部高度:</string>
+    <string name="tv_noticeItem36">停止生产日期:</string>
+    <string name="tv_noticeItem37">钢板弹簧片数:</string>
+    <string name="tv_noticeItem38">免检有效期止:</string>
+    <string name="tv_noticeItem39">轴数:</string>
+    <string name="tv_noticeItem40">反光标识型号:</string>
+    <string name="tv_noticeItem41">轴距:</string>
+    <string name="tv_noticeItem42">反光标识商标:</string>
+    <string name="tv_noticeItem43">前轮距:</string>
+    <string name="tv_noticeItem44">反光标识企业:</string>
+    <string name="tv_noticeItem45">后轮距:</string>
+    <string name="tv_noticeItem46">发动机企业:</string>
+    <string name="tv_noticeItem47">轮胎数:</string>
+    <string name="tv_noticeItem48">发动机商标:</string>
+    <string name="tv_noticeItem49">轮胎规格:</string>
+    <string name="tv_noticeItem50">合格证编号前4位:</string>
+    <string name="tv_noticeItem51">总质量:</string>
+    <string name="tv_noticeItem52">公告标记:</string>
+    <string name="tv_noticeItem53">整备质量:</string>
+    <!-- 公告信息查询_地盘 -->
+    <string name="tv_CHASSISTITLE"> 公告信息查询_底盘详细</string>
+    <string name="tv_chassisTitle">公告信息查询_底盘</string>
+    <string name="tv_chassisTitle1">底盘公告编号</string>
+    <string name="tv_chassisTitle2">底盘型号</string>
+    <string name="tv_chassisTitle3">底盘类别</string>
+    <string name="tv_chassisTitle4">总质量</string>
+    <string name="tv_chassisTitle5">发动机型号</string>
+    <string name="tv_chassisTitle6">公告发布日期</string>
+    <string name="tv_chassisTitle7">公告生效日期</string>
+    <string name="tv_chassisInformation">整车底盘查询结果</string>
+    <string name="tv_chassisItem1">底盘公告编号:</string>
+    <string name="tv_chassisItem2">总质量:</string>
+    <string name="tv_chassisItem3">底盘ID:</string>
+    <string name="tv_chassisItem4">整备质量:</string>
+    <string name="tv_chassisItem5">企业ID:</string>
+    <string name="tv_chassisItem6">准牵引总质量:</string>
+    <string name="tv_chassisItem7">生产地址:</string>
+    <string name="tv_chassisItem8">发动机型号:</string>
+    <string name="tv_chassisItem9">底盘型号:</string>
+    <string name="tv_chassisItem10">排量:</string>
+    <string name="tv_chassisItem11">底盘类别:</string>
+    <string name="tv_chassisItem12">功率:</string>
+    <string name="tv_chassisItem13">产品名称:</string>
+    <string name="tv_chassisItem14">识别代号序列:</string>
+    <string name="tv_chassisItem15">产品商标:</string>
+    <string name="tv_chassisItem16">公告发布类型:</string>
+    <string name="tv_chassisItem17">外廊长:</string>
+    <string name="tv_chassisItem18">备注:</string>
+    <string name="tv_chassisItem19">外廊宽:</string>
+    <string name="tv_chassisItem20">车辆制造企业:</string>
+    <string name="tv_chassisItem21">外廊高:</string>
+    <string name="tv_chassisItem22">公告发布日期:</string>
+    <string name="tv_chassisItem23">燃料种类:</string>
+    <string name="tv_chassisItem24">撤销生效日期:</string>
+    <string name="tv_chassisItem25">依据标准:</string>
+    <string name="tv_chassisItem26">驾驶室前排人数:</string>
+    <string name="tv_chassisItem27">转向方式:</string>
+    <string name="tv_chassisItem28">驾驶室后排人数:</string>
+    <string name="tv_chassisItem29">轴数:</string>
+    <string name="tv_chassisItem30">公告生效日期:</string>
+    <string name="tv_chassisItem31">轴距:</string>
+    <string name="tv_chassisItem32">撤销公告发布日期:</string>
+    <string name="tv_chassisItem33">钢板弹簧片数:</string>
+    <string name="tv_chassisItem34">停止生产日期:</string>
+    <string name="tv_chassisItem35">轮胎数:</string>
+    <string name="tv_chassisItem36">发动机企业:</string>
+    <string name="tv_chassisItem37">车胎规格:</string>
+    <string name="tv_chassisItem38">是否带防抱死系统:</string>
+    <string name="tv_chassisItem39">前轮距:</string>
+    <string name="tv_chassisItem40">合格证编号前4位:</string>
+    <string name="tv_chassisItem41">后轮距:</string>
+    <string name="tv_chassisItem42">公告标记:</string>
+    <!-- 用户登录功能 -->
+    <string name="MODE_WORLD_PRIVATE">1</string>
+
+    <!-- 关于界面 -->
+
+    <string name="about_notice">上海市公安局交警总队车辆管理所</string>
+    <string name="about_notice2">机动车查验系统</string>
+    <string name="vesioncode">版本：</string>
+    <string name="offical">官网：</string>
+    <string name="email">邮箱：</string>
+    <string name="copyright">COPYRIGHT @ 2014 All Rights Reserved</string>
+    <string name="officalnet">www.shtydic.com</string>
+
+    <!-- 扫描界面 -->
+
+    <string name="capture_tip">请将条码置于取景框内扫描</string>
+	<string name="scan_text">请将条码置于取景框内扫描</string>
+	
+	<!-- 图片的剪切 -->
+    <string name="tv_rotate1">向左90°</string>
+    <string name="tv_rotate2">向右90°</string>
+    <string name="tv_rotate3">剪切处理</string>
+    <string name="tv_rotate4">确定</string>
+    
+    <string name="BestWish">PDA查验系统</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_rect_photo">RectPhoto</string>
+    
+    <!-- 日期控件标题 -->
+    <string name="dateSliderTitle">选择日期</string>
+</resources>

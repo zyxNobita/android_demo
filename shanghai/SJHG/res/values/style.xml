@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="PopupAnimationRight" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="PopupAnimationDown" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter_down</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit_down</item>
+    </style>
+
+    <style name="titleFontColor" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#174778</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="itemFontColor" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#174778</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="selectorFontColor" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#174778</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="frameTitleFontColor" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">#174778</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="searchBtn">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:text">@string/search_text</item>
+    </style>
+
+    <style name="magnifyglass">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:src">@drawable/icon_zoomin</item>
+        <item name="android:background">@drawable/button_selector</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+</resources>

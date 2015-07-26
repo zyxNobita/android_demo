@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="chartfx.css" />
+<script type="text/javascript" src="jchartfx.system.js"></script>
+<script type="text/javascript" src="jchartfx.coreBasic.js"></script>
+<script type="text/javascript" src="jquery-2.0.1.min.js"></script>
+<script type="text/javascript" src="jchartfx.advanced.js"></script>
+<!---制作动画-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body  style="text-align:center;padding:0px;margin:0px;width:100%;height:100%;norder:none;" >
+	<div id="result" style="display:none "></div>
+	<!-- <div id="ChartDiv"
+	background-color:red
+		style="width: 100%; height: 200px; text-align: center; "
+		align="center"></div> -->
+	<div id="loading">数据加载中....</div>	
+	<div id="ChartDiv" style="width: 100%; height: 240px;" align="center" style="display:none"></div>
+
+	<script type="text/javascript" language="javascript">
+		var chart1;
+		var state = 0;//默认状态  1：放大 2：缩小
+		var dataStr = "";
+		var postdata = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
+		postdata += "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">";
+		postdata += "<soap:Body>"
+		postdata += "<getYwlCountData xmlns=\"http://tempuri.org/\">";
+		postdata += "<parameters></parameters>";
+		postdata += "</getYwlCountData>"
+		postdata += "</soap:Body>";
+		postdata += "</soap:Envelope>";
+
+		function loadChart() {
+			chart1 = new cfx.Chart();
+			chart1.setGallery(cfx.Gallery.Lines);
+
+			var data = chart1.getData();
+			data.setSeries(1);
+			data.setPoints(2);//当属性值与data的数量不一致时按data的属性列来表示
+			//最小Y
+			//chart1.getAxisY().setMin(100);
+			//最大Y
+			//chart1.getAxisY().setMax(500);
+
+			//所以得都显示数据
+			chart1.getAllSeries().getPointLabels().setVisible(true);
+
+			//var series1 = chart1.getSeries().getItem(0);
+			//设置显示数字
+			//series1.getPointLabels().setVisible(true);
+
+			var series1 = chart1.getSeries().getItem(0);
+			var fields = chart1.getDataSourceSettings().getFields();
+			var field1 = new cfx.FieldMap();
+			field1.setName("count")
+			field1.setUsage(cfx.FieldUsage.Value);
+			fields.add(field1);
+
+			var field2 = new cfx.FieldMap();
+			field2.setName("YEAR");
+			field2.setUsage(cfx.FieldUsage.Label);//Label  设置x方向的值     XValue
+			fields.add(field2);
+
+			//chart1.getAxisX().getLabelsFormat().setCustomFormat("MMM");
+			/*
+
+
+			 var field2 = new cfx.FieldMap();
+			 field2.setName("Planea");
+			 field2.setUsage(cfx.FieldUsage.FromValue);
+			 fields.add(field2);*/
+
+			chart1.getLegendBox().setVisible(false);
+			//设置显示说明的位置（默认右上角）
+			chart1.getLegendBox().setDock(cfx.DockArea.Bottom);
+			/* chart1.getLegendBox().setMarginY(-5); */
+			chart1.getDataGrid().setVisible(false);
+			;
+			var divHolder = document.getElementById('ChartDiv');
+			jQuery(divHolder).empty();
+			//alert($("g").html());
+			//var gList = document.getElementsByTagName("g");//.length
+			//gList[0].style.display="none";//隐藏jchartfx图标
+
+			//alert(mydata); 
+			//注入数据
+			//chart1.setDataSource(mydata);
+			//return;
+
+			jQuery("#result").append("+++++++++++++++");
+			jQuery.support.cors = true;
+			if(state!=0){
+				jQuery("#result").html("state==="+state);
+				chart1.setDataSource(dataStr);
+				chart1.create(divHolder);
+				//去水印
+				//var maxSize = jQuery("#ChartDiv svg g").length;
+				var waterMark = jQuery("#ChartDiv svg g")[0];//[1]
+				jQuery(waterMark).attr("display", "none");
+			} else {
+				$.ajax({
+					type : "POST",
+					contentType : "text/xml",
+					//url:"http://localhost:8080/Server/services/HelloWorldService",
+					url : "http://192.168.0.103:8080/Server/services/Service",
+					//url:"http://10.62.1.81:8090/Server/services/Service",
+					data : getPostData(),//这里不该用JSON格式
+					dataType : 'xml',//这里设成XML或者不设。设成JSON格式会让返回值变成NULL
+					success : function(xml) {
+						//对结果做XML解析。
+						//浏览器判断 (IE和非IE完全不同)
+						//var fromData = xml.getElementsByTagName("ns1:out")[0].childNodes[0].nodeValue;
+
+						//对结果做XML解析。
+						//浏览器判断 (IE和非IE完全不同)
+						//if($.browser.msie){ 
+						//  $("#result").append(xml.getElementsByTagName("ns1:out")[0].childNodes[0].nodeValue+"<br/>");
+						// }
+						//else{
+						var resultText = "";
+						$(xml).find("out").each(function() {
+							 $("#result").append($(this).text()+"</br>");//调试
+							resultText += $(this).text();
+						})
+						dataStr = jQuery.parseJSON(resultText);
+						chart1.setDataSource(dataStr);
+						chart1.create(divHolder);
+						//去水印
+						var waterMark = jQuery("#ChartDiv svg g")[0];
+						jQuery(waterMark).attr("display", "none");
+						jQuery("#loading").css("display","none");
+						// }
+
+					},
+					error : function(xhr, txt, err) {
+						alert("error connecting to data: " + txt + "---" + xhr
+								+ "----" + err);
+					},
+					complete : function(x) {
+						//alert('complete:'+x.responseText);
+					}
+				});
+			}
+
+		}
+
+		//定义满足SOAP协议的参数。
+		function getPostData() {
+			return postdata;
+		}
+
+		//放大
+		function zoomIN() {
+			state = 1;
+			jQuery("#result").html("zoomIN OK");
+			jQuery("#ChartDiv").width(850);	//650		
+			jQuery("#ChartDiv").height(240);
+			var ass =jQuery("#ChartDiv").children("svg");
+			jQuery(ass).css("marginLeft","-300");
+			var wc = jQuery("#ChartDiv svg").first();
+			//jQuery(wc).css("marginLeft","-300");
+			jQuery("#result").html("zoomIN ====");
+			jQuery("#ChartDiv").html("");
+			loadChart();
+		}
+
+		function zoomOUT() {
+			state = 2;
+			jQuery("#result").html("zoomOut OK");
+			jQuery("#ChartDiv").width(630);//440
+			jQuery("#ChartDiv").height(240);
+			jQuery("#result").html("zoomOut ====");
+			jQuery("#ChartDiv").empty();
+			loadChart();
+		}
+
+		
+		function initData(CUS_NAME, startTime, endTime,guid) {
+			state = 0;
+			//根据WSDL分析sayHelloWorld是方法名，parameters是传入参数名
+			postdata = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
+			postdata += "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">";
+			postdata += "<soap:Body>"
+			postdata += "<getYwlCountData xmlns=\"http://tempuri.org/\">";
+			postdata += "<parameters>"+guid+"</parameters>";
+			postdata += "</getYwlCountData>"
+			postdata += "</soap:Body>";
+			postdata += "</soap:Envelope>";
+			jQuery("#result").append(
+					CUS_NAME + "--" + startTime + "---" + endTime);
+			//jQuery("#result").append("------");
+			loadChart();
+		}
+		
+				
+		window.demo.clickOnAndroid();		
+	</script>
+</body>
+</html>

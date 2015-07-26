@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_top" >
+
+        <LinearLayout
+            android:id="@+id/ll_businessAcceptance_return"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dot_arrowl"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_businessAcceptance_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/titleTyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查验业务受理" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_businessAcceptance_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_blue"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="#4c74b6" />
+
+        <LinearLayout
+            android:id="@+id/ll_businessAcceptance_exit"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imgBtn_businessAcceptance_exit"
+                android:layout_width="95dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/return_off"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_businessAcceptance_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/ll_businessAcceptance_bottom" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_businessAcceptance_queryCarInfo"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/light_blue"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgBtn_businessAcceptance_queryCarInfo"
+                    android:layout_width="103dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/querycar_off"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="#4c74b6" />
+
+            <LinearLayout
+                android:id="@+id/ll_businessAcceptance_queryNoticeInfo"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/light_blue"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgBtn_businessAcceptance_queryNoticeInfo"
+                    android:layout_width="103dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/querynotice_off"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="#4c74b6" />
+
+            <LinearLayout
+                android:id="@+id/ll_businessAcceptance_submit"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/light_blue"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgBtn_businessAcceptance_submit"
+                    android:layout_width="96dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/submit_off"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="fill_parent"
+                android:background="#4c74b6" />
+
+            <LinearLayout
+                android:id="@+id/ll_businessAcceptance_replace"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/light_blue"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgBtn_businessAcceptance_replace"
+                    android:layout_width="96dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/replace_off"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_businessAcceptance_bottom"
+        android:layout_below="@id/rl_businessAcceptance_top"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/businessacceptance_head1" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="查验项目"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_query"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_select"
+                    android:gravity="center"
+                    android:text="点击获取查验项目" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/table_bg" >
+
+                <cn.tydic.mobile.pdarequery.tools.MyGridView
+                    android:id="@+id/gv_businessAcceptance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:numColumns="2" >
+                </cn.tydic.mobile.pdarequery.tools.MyGridView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="查验信息采集"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+
+            <include layout="@layout/businessacceptance_center1" />
+
+            <include layout="@layout/businessacceptance_takepictrue"/>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

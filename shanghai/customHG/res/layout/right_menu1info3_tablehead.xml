@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_RM1I3_tableHead"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+   >
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <LinearLayout
+                android:id="@+id/ll_RM1I3_tableTop"
+                style="@style/LV_TableTop" >
+                
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                
+	                <TextView
+	                    style="@style/LV_TableTopTV"
+	                    android:background="@drawable/table_left_top"
+	                    android:text="@string/customNum" />
+	                
+	                <LinearLayout
+	                    android:layout_width="0dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1" >
+	                    
+	                    <TextView
+	                        android:id="@+id/tv_RM1I3_text1"
+	                        style="@style/LV_TableTopInnersTV"
+	                        android:text="" />
+	                </LinearLayout>
+	                
+	                <TextView
+	                    style="@style/LV_TableTopTV"
+	                    android:background="@drawable/table_normal"
+	                    android:text="@string/management_unit" />
+	                
+	                <LinearLayout
+	                    android:layout_width="0dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1" >
+	                    
+	                    <TextView
+	                        android:id="@+id/tv_RM1I3_text6"
+	                        style="@style/LV_TableTopInnersTV"
+	                        android:text="" />
+	                </LinearLayout>
+	            </LinearLayout>
+	            
+	            <ImageView
+	                android:contentDescription="@null"
+	                style="@style/LV_TableTopDivide" />
+	            
+	            <LinearLayout style="@style/LV_TableTopRowLV" >
+	                
+	                <TextView
+	                    style="@style/LV_TableTopTV"
+	                    android:background="@drawable/table_normal"
+	                    android:text="@string/transport_way" />
+	                
+	                <LinearLayout
+	                    android:layout_width="0dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1" >
+	                    
+	                    <TextView
+	                        android:id="@+id/tv_RM1I3_text7"
+	                        style="@style/LV_TableTopInnersTV"
+	                        android:text="" />
+	                </LinearLayout>
+	                
+	                <TextView
+	                    style="@style/LV_TableTopTV"
+	                    android:background="@drawable/table_normal"
+	                    android:text="@string/transport_tool_name" />
+	                
+	                <LinearLayout
+	                    android:layout_width="0dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1" >
+	                    
+	                    <TextView
+	                        android:id="@+id/tv_RM1I3_text8"
+	                        style="@style/LV_TableTopInnersTV"
+	                        android:text="" />
+	                </LinearLayout>
+	            </LinearLayout>
+	            
+	            <ImageView
+	                android:contentDescription="@null"
+	                style="@style/LV_TableTopDivide" />
+	            
+	            <LinearLayout style="@style/LV_TableTopRowLV" >
+	                
+	                <TextView
+	                    style="@style/LV_TableTopTV"
+	                    android:background="@drawable/table_normal"
+	                    android:text="@string/transport_num" />
+	                
+	                <LinearLayout
+	                    android:layout_width="0dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1" >
+	                    
+	                    <TextView
+	                        android:id="@+id/tv_RM1I3_text9"
+	                        style="@style/LV_TableTopInnersTV"
+	                        android:text="" />
+	                </LinearLayout>
+	                
+	                <TextView
+	                    style="@style/LV_TableTopTV"
+	                    android:background="@drawable/table_normal"
+	                    android:text="@string/receipt_unit" />
+	                
+	                <LinearLayout
+	                    android:layout_width="0dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="1" >
+	                    
+	                    <HorizontalScrollView 
+	                           android:layout_width="fill_parent"
+	                           android:layout_height="fill_parent"
+	                        ><TextView
+	                        android:id="@+id/tv_RM1I3_text10"
+	                        style="@style/LV_TableTopInnersTV"
+	                        android:text="" />
+	                    </HorizontalScrollView>
+	                  
+	                </LinearLayout>
+	            </LinearLayout>
+	            
+	            <ImageView
+	                android:contentDescription="@null"
+	                style="@style/LV_TableTopDivide" />
+	                
+	            <RelativeLayout
+	                android:id="@+id/layout_RM1I3Second_show_1"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginBottom="5dp"
+	                style="@style/TAKEPHOTO_RELATION"
+	                android:background="@drawable/show_btn_bg_down">
+	
+	                <Button
+	                    android:id="@+id/btn_RM1I3Second_show_1"
+	                    style="@style/BTN_TakeCameraToShowUp" />
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="40dp"
+	                    android:layout_alignTop="@id/btn_RM1I3Second_show_1"
+	                    android:layout_marginLeft="15dp"
+	                    android:layout_toRightOf="@id/btn_RM1I3Second_show_1"
+	                    android:gravity="center"
+	                    android:text="@string/camera_container"
+	                    android:textSize="20sp" />
+	                
+	                <ImageButton
+	                    android:id="@+id/IB_RM1I3_takeCameraOne"
+	                    style="@style/BTN_TakeCameraUp"
+	                    android:contentDescription="@null" />
+	            </RelativeLayout>
+	            
+	            <LinearLayout
+	                android:id="@+id/ll_RM1I3_second_1"
+	                style="@style/TAKEPHOTO_LIENA"
+	                android:visibility="visible" >
+	                
+	                <Gallery
+	                    android:id="@+id/gl_RM1I3_containerPic"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:spacing="10dp"
+	                    android:layout_marginLeft="-500dp" />
+	            </LinearLayout>
+	            
+	            <RelativeLayout
+	                android:id="@+id/layout_RM1I3Second_show_2"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginBottom="5dp"
+	                style="@style/TAKEPHOTO_RELATION"
+	                android:background="@drawable/show_btn_bg_up" >
+	                
+	                <Button
+	                    android:id="@+id/btn_RM1I3Second_show_2"
+	                    style="@style/BTN_TakeCameraToShowUp" />
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="40dp"
+	                    android:layout_alignTop="@id/btn_RM1I3Second_show_2"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_toRightOf="@id/btn_RM1I3Second_show_2"
+	                    android:gravity="center"
+	                    android:text="@string/camera_goods"
+	                    android:textSize="20sp" />
+	                
+	                <ImageButton
+	                    android:id="@+id/IB_RM1I3_takeCameraTwo"
+	                    style="@style/BTN_TakeCameraUp"
+	                    android:contentDescription="@null" />
+	            </RelativeLayout>
+	            
+	            <LinearLayout
+	                android:id="@+id/ll_RM1I3_second_2"
+	                style="@style/TAKEPHOTO_LIENA"
+	                android:visibility="gone" >
+	                
+	                <Gallery
+	                    android:id="@+id/gl_RM1I3_goodsPic"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:spacing="10dp"
+	                    android:layout_marginLeft="-500dp" />
+	            </LinearLayout>
+	            
+	            <RelativeLayout
+	                android:id="@+id/layout_RM1I3Second_show_3"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginBottom="5dp"
+	                style="@style/TAKEPHOTO_RELATION"
+	                android:background="@drawable/show_btn_bg_up" >
+	                
+	                <Button
+	                    android:id="@+id/btn_RM1I3Second_show_3"
+	                    style="@style/BTN_TakeCameraToShowUp" />
+	                
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="40dp"
+	                    android:layout_alignTop="@id/btn_RM1I3Second_show_3"
+	                    android:layout_marginLeft="10dp"
+	                    android:layout_toRightOf="@id/btn_RM1I3Second_show_3"
+	                    android:gravity="center"
+	                    android:text="@string/camera_container_info"
+	                    android:textSize="20sp" />
+	                
+	                <ImageButton
+	                    android:id="@+id/IB_RM1I3_takeCameraThree"
+	                    style="@style/BTN_TakeCameraUp"
+	                    android:contentDescription="@null" />
+	            </RelativeLayout>
+	            
+	            <LinearLayout
+	                android:id="@+id/ll_RM1I3_second_3"
+	                style="@style/TAKEPHOTO_LIENA"
+	                android:visibility="gone" >
+	                
+	                <Gallery
+	                    android:id="@+id/gl_RM1I3_containerInfoPic"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:spacing="10dp"
+	                    android:layout_marginLeft="-500dp" />
+	            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_RM1I3_HsaveImage"
+            style="@style/Btn_AllButton"
+            android:layout_marginRight="10dp"
+            android:text="@string/saveImage" />
+
+        <Button
+            android:id="@+id/btn_RM1I3_Hupload"
+            style="@style/Btn_AllButton"
+            android:layout_marginRight="10dp"
+            android:text="@string/edit_goods_photo_upload"/>
+
+        <Button
+            android:id="@+id/btn_RM1I3_HCupload"
+            style="@style/Btn_AllButton"
+            android:layout_marginRight="10dp"
+            android:text="@string/cancelUpload" />
+        
+        <Button
+            android:id="@+id/btn_RM1I3_Hback"
+            style="@style/Btn_AllButton"
+            android:layout_marginRight="10dp"
+            android:text="@string/back" />
+    </LinearLayout>
+</LinearLayout>

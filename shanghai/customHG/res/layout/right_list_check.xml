@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <LinearLayout 
+                android:id="@+id/lr_upload_pic_info"
+                style="@style/LV_TableTop" >
+                
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/goods_name" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_checkRecord_text1"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_checkRecord_text1" />
+                    </LinearLayout>
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/reference_tax_num" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_checkRecord_text2"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_checkRecord_text2" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+                
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/pack" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_checkRecord_text3"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_checkRecord_text3" />
+                    </LinearLayout>
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/appearance" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_checkRecord_text4"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_checkRecord_text4" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+                
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/goods_check_hint" />
+                      
+                    <LinearLayout 
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+                            
+                            <TextView
+                                android:id="@+id/tv_checkRecord_text5"
+                                style="@style/LV_TableTopInnersTV"
+                                android:text="@string/tv_checkRecord_text5" />
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+                
+                <RelativeLayout
+                    android:id="@+id/layout_checkSecond_show"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TAKEPHOTO_RELATION_THREE">
+                    
+                    <Button
+                        android:id="@+id/btn_checkSecond_show"
+                        style="@style/BTN_TakeCameraToShowUp" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_checkSecond_show"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/btn_checkSecond_show"
+                        android:gravity="center"
+                        android:text="@string/goods_relation_pic"
+                        android:textSize="20sp" />
+                    
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_checkSecond_second"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="visible" >
+                    
+                    <Gallery
+                        android:id="@+id/gl_checkRecord_goodsRelationPic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+            </LinearLayout>            
+        </ScrollView>        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center" >
+        
+        <Button
+            android:id="@+id/btn_dialogClose"
+            style="@style/BG_TC_TS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close" />
+    </LinearLayout>
+
+</LinearLayout>

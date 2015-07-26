@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/widget46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/entityType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实体类型:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/entityTypeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/timeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间类型:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/timeTypeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/timeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间类型:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/timeTypeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/starttimeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起始时间:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/starttimeTypeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/endwidget46"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/endtimeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="终止时间:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/endtimeTypeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

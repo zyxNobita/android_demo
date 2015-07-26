@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="150dp"
+                style="@style/LV_TV_ITEMS"
+                android:text="@string/goods_tax_num" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="1201dp"
+                style="@style/LV_TV_ITEMS"
+                android:text="@string/check_risk_point" />
+
+        </LinearLayout>
+        
+        <ImageView
+		    android:contentDescription="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divide" />
+        
+        <com.bai.demo.utils.MyListView
+            android:id="@+id/lv_RM2I4_right_layout_listViewSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.bai.demo.utils.MyListView>
+        
+        <View style="@style/LV_HorazitLine" />
+        
+    </LinearLayout>
+
+</HorizontalScrollView>

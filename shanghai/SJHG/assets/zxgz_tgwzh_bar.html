@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="chartfx.css" />
+<script type="text/javascript" src="jchartfx.system.js"></script>
+<script type="text/javascript" src="jchartfx.coreBasic.js"></script>
+<script type="text/javascript" src="jquery-2.0.1.min.js"></script>
+<script type="text/javascript" src="jchartfx.advanced.js"></script>
+<script type="text/javascript" src="jquery.json-2.4.min.js"></script>
+<!---制作动画-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<style type="text/css">
+body {
+	text-align: center;
+}
+
+div#ChartDiv {
+	text-align: left;
+	margin: 0 auto;
+	border: 1px solid #333;
+}
+</style>
+</head>
+<body
+	style="background: transparent; margin: 0dp auto; text-align: center; border: 0px solid #333;">
+	<div id="loading">数据加载中....</div>
+	<div id="ChartDiv"
+		style="width: 100%; height: 200px; text-align: center; margin: 0px auto; border: 0px solid #333;"
+		align="center"></div>
+	<div id="result" style="display: none"></div>
+	<script type="text/javascript" language="javascript">
+		var chart1;
+		var dataStr = "";
+		var state = 0;//默认状态  需要查询  1：放大  2：缩小
+		var postdata = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
+		postdata += "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">";
+		postdata += "<soap:Body>"
+		postdata += "<getWZHExprotAllBar xmlns=\"http://tempuri.org/\">";
+		postdata += "<parameters></parameters>";
+		postdata += "<parameters></parameters>";
+		postdata += "<parameters></parameters>";
+		postdata += "</getWZHExprotAllBar>"
+		postdata += "</soap:Body>";
+		postdata += "</soap:Envelope>";
+		var divHolder = document.getElementById('ChartDiv');
+		function loadChart() {
+			chart1 = new cfx.Chart();
+			chart1.setGallery(cfx.Gallery.Bar);
+
+			var data = chart1.getData();
+			data.setSeries(1);
+			data.setPoints(2);//当属性值与data的数量不一致时按data的属性列来表示
+			//最小Y
+			//chart1.getAxisY().setMin(100);
+			//最大Y
+			//chart1.getAxisY().setMax(500);
+
+			//所以得都显示数据
+			chart1.getAllSeries().getPointLabels().setVisible(true);
+
+			//var series1 = chart1.getSeries().getItem(0);
+			//设置显示数字
+			//series1.getPointLabels().setVisible(true);
+
+			var series1 = chart1.getSeries().getItem(0);
+			var fields = chart1.getDataSourceSettings().getFields();
+			var field1 = new cfx.FieldMap();
+			field1.setName("报关单总量");//Plane  ENTRY_COUNT_A 
+			field1.setUsage(cfx.FieldUsage.Value);
+			fields.add(field1);
+
+			var field2 = new cfx.FieldMap();
+			field2.setName("通关无纸化报关单总量");//Planea  ENTRY_COUNT_WZ  
+			field2.setUsage(cfx.FieldUsage.Value);
+			fields.add(field2);
+
+			var field3 = new cfx.FieldMap();
+			field3.setName("MASTER_CUSTOMS_CODE");//Monthaa
+			field3.setUsage(cfx.FieldUsage.Label);//Label  设置x方向的值     XValue
+			fields.add(field3);
+
+			//chart1.getAxisX().getLabelsFormat().setCustomFormat("MMM");
+			/*
+
+
+			 var field2 = new cfx.FieldMap();
+			 field2.setName("Planea");
+			 field2.setUsage(cfx.FieldUsage.FromValue);
+			 fields.add(field2);*/
+
+			var CustomItems = chart1.getLegendBox().getCustomItems();
+			//var item0 =CustomItems.getItem(0);
+			//var item1 =CustomItems.getItem(1);
+			var aaaa = chart1.getLegendBox();
+			var cc = CustomItems.getCount();
+
+			var legendItem;
+			legendItem = new cfx.CustomLegendItem();
+			legendItem.setText("Custom Item");
+			legendItem.setColor("#FF0000");
+			legendItem.setMarkerShape(cfx.MarkerShape.Diamond);
+
+			//CustomItems.add(legendItem);
+
+			var legendItem2;
+			legendItem2 = new cfx.CustomLegendItem();
+			legendItem2.setText("Custom Item2");
+			legendItem2.setColor("#FF0000");
+			legendItem2.setMarkerShape(cfx.MarkerShape.Diamond);
+			//CustomItems.add(legendItem2);
+
+			chart1.getLegendBox().setVisible(true);
+			//设置显示说明的位置（默认右上角）
+
+			chart1.getLegendBox().setDock(cfx.DockArea.Bottom);
+			chart1.getDataGrid().setVisible(false);
+			jQuery(divHolder).empty();
+			//alert($("g").html());
+			//var gList = document.getElementsByTagName("g");//.length
+			//gList[0].style.display="none";//隐藏jchartfx图标
+
+			//注入数据
+			//chart1.setDataSource(mydata);
+			//return;
+
+			jQuery("#result").append("+++++++++++++++");
+			jQuery.support.cors = true;
+			if (state != 0) {
+
+				chart1.setDataSource(dataStr);
+				chart1.create(divHolder);
+
+				var maxSize = jQuery("#ChartDiv svg g").length;
+				var waterMark = jQuery("#ChartDiv svg g")[maxSize - 1];
+				jQuery(waterMark).attr("display", "none");
+
+			} else {
+				$.ajax({
+					type : "POST",
+					contentType : "text/xml",
+					//url:"http://localhost:8080/Server/services/HelloWorldService",
+					//url : "http://10.62.1.81:8090/Server/services/Service",
+					url:"http://192.168.0.103:8080/Server/services/Service",
+
+					data : getPostData(),//这里不该用JSON格式
+					dataType : 'xml',//这里设成XML或者不设。设成JSON格式会让返回值变成NULL
+					success : function(xml) {
+						//对结果做XML解析。
+						//浏览器判断 (IE和非IE完全不同)
+						//var fromData = xml.getElementsByTagName("ns1:out")[0].childNodes[0].nodeValue;
+
+						//对结果做XML解析。
+						//浏览器判断 (IE和非IE完全不同)
+						//if($.browser.msie){ 
+						//  $("#result").append(xml.getElementsByTagName("ns1:out")[0].childNodes[0].nodeValue+"<br/>");
+						// }
+						//else{
+
+						var resultText = "";
+						$(xml).find("out").each(function() {
+							//$("#result").append($(this).text()+"</br>");
+							resultText += $(this).text();
+						})
+						dataStr = jQuery.parseJSON(resultText);
+						chart1.setDataSource(dataStr);
+						chart1.create(divHolder);
+
+						var maxSize = jQuery("#ChartDiv svg g").length;
+						var waterMark = jQuery("#ChartDiv svg g")[maxSize - 1];
+						jQuery(waterMark).attr("display", "none");
+						jQuery("#loading").css("display", "none");
+						// }
+
+					},
+					error : function(xhr, txt, err) {
+						alert("error connecting to data: " + txt + "---" + xhr
+								+ "----" + err);
+					},
+					complete : function(x) {
+						//alert('complete:'+x.responseText);
+					}
+				});
+
+			}
+
+		}
+
+		//定义满足SOAP协议的参数。
+		function getPostData() {
+			return postdata;
+		}
+
+		var soapMessage = '<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"'
+                  + 'xmlns:xsd="http://www.w3.org/2001/XMLSchema"'
+                  + 'xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"'
+                  + 'xmlns:gat="http://gateways.place">'
+				+ '<soapenv:Header/>'
+				+ '<soapenv:Body>'
+				+ '<gat:sayHelloName soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">'
+				+ '<name xsi:type="xsd:double">4140</VersionId>'
+				+ '</gat:sayHelloName>'
+				+ '</soapenv:Body>'
+				+ '</soapenv:Envelope>';
+
+		//放大
+		function zoomIN() {
+			state = 1;
+			jQuery("#result").html("zoomIN OK");
+			jQuery("#ChartDiv").width(1000);
+			jQuery("#ChartDiv").height(650);
+			var ass = jQuery("#ChartDiv").children("svg");
+			//jQuery(ass).css("marginLeft","-300");
+			var wc = jQuery("#ChartDiv svg").first();
+			//jQuery(wc).css("marginLeft","-300");
+			jQuery("#result").html("zoomIN ====");
+			jQuery("#ChartDiv").html("");
+			jQuery("#ChartDiv").css("marginLeft", "0px");
+			loadChart();
+		}
+
+		function zoomOUT() {
+			state = 2;
+			jQuery("#result").html("zoomOut OK");
+			jQuery("#ChartDiv").width(800);
+			jQuery("#ChartDiv").height(200);
+			jQuery("#result").html("zoomOut ====");
+			jQuery("#ChartDiv").empty();
+			loadChart();
+		}
+
+		function initData(MASTER_CUSTOMS_CODE, startTime, endTime) {
+			state = 0;
+			//根据WSDL分析sayHelloWorld是方法名，parameters是传入参数名
+			postdata = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
+			postdata += "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">";
+			postdata += "<soap:Body>"
+			postdata += "<getWZHExprotAllBar xmlns=\"http://tempuri.org/\">";
+			postdata += "<parameters>" + MASTER_CUSTOMS_CODE + "</parameters>";
+			postdata += "<parameters>" + startTime + "</parameters>";
+			postdata += "<parameters>" + endTime + "</parameters>";
+			postdata += "</getWZHExprotAllBar>"
+			postdata += "</soap:Body>";
+			postdata += "</soap:Envelope>";
+			jQuery("#result").append(
+					MASTER_CUSTOMS_CODE + "--" + startTime + "---" + endTime);
+			//jQuery("#result").append("------");
+			loadChart();
+		}
+
+		window.demo.clickOnAndroid();
+	</script>
+</body>
+</html>

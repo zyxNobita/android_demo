@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/index_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/bg_index_title"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/index_title"
+        style="@style/titleFontColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/zbsm" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="340dp"
+        android:layout_below="@+id/index_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_index_body" >
+
+        <TextView
+            android:id="@+id/index_text"
+            style="@style/itemFontColor"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="@string/index_tab2menu1child1"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</RelativeLayout>

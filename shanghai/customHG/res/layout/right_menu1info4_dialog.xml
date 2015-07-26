@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!--   审核意见：退回修改、转待处理  按钮功能 -->
+    <LinearLayout 
+        android:id="@+id/ll_RM1I4_dialogTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+         	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="@string/tv_RM1I4_dialog_text1"
+            />
+        <Spinner 
+            android:id="@+id/spn_RM1I4Dialog_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_RM1I4_dialogBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+         <TextView 
+         	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="@string/tv_RM1I4_dialog_text2"
+            />
+         <EditText 
+            android:id="@+id/et_RM1I4Dialog_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="2"
+             />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button 
+            android:id="@+id/btn_RM1I4Dialog_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_save"
+            android:background="@drawable/all_button_click"
+            android:gravity="center"
+            />
+        <Button 
+            android:id="@+id/btn_RM1I4Dialog_clace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+             android:background="@drawable/all_button_click"
+            android:text="@string/btn_clace"
+            />
+    </LinearLayout>
+
+</LinearLayout>

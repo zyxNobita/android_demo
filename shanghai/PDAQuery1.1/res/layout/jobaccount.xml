@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_top" >
+        
+        <LinearLayout
+            android:id="@+id/ll_jobAccount_return"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+	        <ImageView
+	            android:layout_width="66dp"
+	            android:layout_height="35dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_gravity="center"
+	            android:background="@drawable/dot_arrowl"
+	            android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_jobAccount_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/titleTyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="工作台账统计" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_jobAccountTable"
+        style="@style/tableTop"
+        android:layout_below="@id/rl_jobAccount_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+                
+	            <TextView
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:gravity="center"
+	                android:singleLine="true"
+	                android:text="开始时间："
+	                android:textSize="16sp" />
+	
+	            <EditText
+	                android:id="@+id/et_jobAccount_beginTime"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:background="@drawable/login_selector"
+	                android:hint="@null"
+	                android:singleLine="true" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+	            
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            style="@style/tableTopDivide"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false" >
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+                
+	            <TextView
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:gravity="center"
+	                android:singleLine="true"
+	                android:text="结束时间："
+	                android:textSize="16sp" />
+	
+	            <EditText
+	                android:id="@+id/et_jobAccount_endTime"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:background="@drawable/login_selector"
+	                android:hint="@null"
+	                android:singleLine="true" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_jobAccount_count"
+                    android:layout_width="100dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/btn_select"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="统计"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_jobAccount_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_blue"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/ll_jobAccount_exit"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imgBtn_jobAccount_exit"
+                android:layout_width="95dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/return_off"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_jobAccount_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ll_jobAccountTable"
+        android:layout_above="@id/ll_jobAccount_bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:orientation="horizontal" >
+	        
+	        <TextView
+		        android:id="@+id/tv_beginTime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="2013-01-10"
+		        android:textSize="14sp"
+		        android:textColor="@color/red" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="至"
+		        android:textSize="14sp"
+		        android:textColor="@color/grey" />
+	        
+	        <TextView
+		        android:id="@+id/tv_endTime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="2013-11-15"
+		        android:textSize="14sp"
+		        android:textColor="@color/red" />
+	        
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="工作台账统计结果"
+		        android:textSize="14sp"
+		        android:textColor="@color/grey" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/ll_jobAccount_lvContent"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:background="@drawable/table_bg"
+		    android:orientation="vertical" >
+	        
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="#50000000"
+		        android:orientation="horizontal" >
+                
+			    <TextView
+		            android:layout_width="80dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center"
+		            android:text="序号"
+		            android:textSize="16sp" />
+		        
+		        <View
+		            android:layout_marginTop="0.5dp"
+		            style="@style/lv_verticalLine" />
+		
+		        <TextView
+		            android:id="@+id/tv_jobAccount_business"
+		            android:layout_width="260dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center"
+		            android:text="业务"
+		            android:textSize="16sp" />
+		        
+		        <View
+		            android:layout_marginTop="0.5dp"
+		            style="@style/lv_verticalLine" />
+		
+		        <TextView
+		            android:id="@+id/tv_jobAccount_number"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:gravity="center"
+		            android:text="数量"
+		            android:textSize="16sp" />
+                
+	            <!--
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="序号"
+                    android:textSize="16sp" />
+                
+                <View style="@style/lv_verticalLine" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="业务"
+                    android:textSize="16sp" />
+                
+                <View style="@style/lv_verticalLine" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="数量"
+                    android:textSize="16sp" />
+                -->
+	        </LinearLayout>
+	        
+	        <View style="@style/lv_horazitLine" />
+	        
+	        <ListView
+	            android:id="@+id/lv_jobAccount"
+	            android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:cacheColorHint="#00000000"
+		        android:divider="#999999"
+		        android:dividerHeight="1dp"
+		        android:scrollbars="none" >
+	    	</ListView>
+	    	
+	        <View style="@style/lv_horazitLine" />
+	    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

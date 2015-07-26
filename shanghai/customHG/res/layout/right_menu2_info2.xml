@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+           
+           <TextView
+                    android:id="@+id/tv_menu2Info2_time"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/main_menu_tempbg"
+                    android:text="布控时间" />
+
+                <EditText
+                    android:id="@+id/et_menu2Info2_timeFrom"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/login_et_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="至" />
+
+                <EditText
+                    android:id="@+id/et_menu2Info2_timeTo"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/login_et_bg"/>
+
+                <TextView
+                    android:id="@+id/tv_menu2Info2_Input"
+                   android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/main_menu_tempbg"
+                    android:text="进出口" />
+
+                <EditText
+                    android:id="@+id/et_menu2Info2_Input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                   	android:paddingLeft="10dp"
+                   	android:maxWidth="300dp"
+                   	android:minWidth="200dp"
+                    android:background="@drawable/login_et_bg" />
+       </LinearLayout>
+        <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/divide" />
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+            <TextView
+                    android:id="@+id/tv_menu2Info2_number"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/main_menu_tempbg"
+                    android:text="报关单号" />
+
+                <EditText
+                    android:id="@+id/et_menu2Info2_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/login_et_bg"
+                    android:paddingLeft="10dp"
+                    android:maxWidth="300dp"
+                    android:ems="10" />
+
+                <Button
+                    android:id="@+id/btn_menu2Info2"
+                    android:layout_width="80dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                   	android:layout_marginRight="50dp"
+                    android:background="@drawable/all_buttom"
+                    android:text="查询"
+                    android:textColor="@color/white" />
+           
+       </LinearLayout>
+       <ImageView 
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/divide"
+	    />
+      
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu2_info2_listview" />
+
+</LinearLayout>

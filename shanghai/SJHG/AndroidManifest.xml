@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tydic.digitalcustom"
+    android:versionCode="1"
+    android:versionName="1" >
+
+    <uses-sdk android:minSdkVersion="10" />
+   <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".WelcomeTydicActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateVisible|adjustPan|stateHidden" >
+        </activity>
+        <!-- 业务量 模块 -->
+        <activity
+            android:name=".activity.YwlActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!-- 执法评估 模块 -->
+        <activity
+            android:name=".activity.ZfpgActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+         <!-- 专项工作 模块 -->
+        <activity
+            android:name=".activity.ZxgzActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+         <!-- 我得收藏 模块 -->
+        <activity
+            android:name=".activity.WdscActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+    </application>
+
+</manifest>

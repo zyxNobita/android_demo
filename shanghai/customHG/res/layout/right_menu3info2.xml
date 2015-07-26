@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/table"
+        style="@style/LV_TableTop" >
+
+        <LinearLayout style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_CheckTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/custom_department" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+
+                <Spinner
+                    android:id="@+id/sp_RM3I2_spinnerOne"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+        
+                <Spinner
+                    android:id="@+id/sp_RM3I2_spinnerTwo"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/sp_RM3I2_spinnerThree"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+
+        <LinearLayout style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_CheckTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/handle_state" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2" >
+
+                <Spinner
+                    android:id="@+id/sp_RM3I2_spinnerFour"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+                
+                <Spinner 
+                    android:id="@+id/sp_RM3I2_spinnerFive"
+                    style="@style/LV_TableTopSPINNER" 
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/imports_exports" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/sp_RM3I2_spinnerSix"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+
+        <LinearLayout style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_CheckTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/check_result_input_time" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2" >
+
+                <EditText
+                    android:id="@+id/et_RM3I2_timeStart"
+                    style="@style/LV_TableTopET"
+                    android:layout_weight="1"
+                    android:hint="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/to"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/et_RM3I2_timeStop"
+                    style="@style/LV_TableTopET"
+                    android:layout_weight="1"
+                    android:hint="@null" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LV_Search" >
+
+        <Button
+            android:id="@+id/btn_menu3Info2_submit"
+            style="@style/Btn_Search" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu3info2_listview" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_rightMenu3Info2_llSecond_back"
+            style="@style/Btn_Search"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</LinearLayout>

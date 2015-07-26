@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 访问服务器网络的Ip配置 -->
+    <string name="REQ_IP">http://192.168.0.201:802</string>
+    <!-- 上传下载图片的配置 -->
+    <string name="DOWNLOADIMAGE_P">http://192.168.0.201:802/RemoteImages/</string>
+    <!-- 显示下载图片的配置 -->
+    <string name="DISPLAYDOWNLOADIMAGE_P">http://192.168.0.201:802/Hsimage/</string>
+    <!-- 网络服务接口调用的链接配置 -->
+    <!-- 登录模块 -->
+    <string name="REQ_Login_Action">http://tempuri.org/IGetExamDataService/GetCurrentUserInfo</string>
+    <string name="Connection_MethodName"></string>
+    <string name="Connection_Webservice"></string>
+    <!-- 通用 -->
+    <string name="app_name">上海海关视频化查验系统</string>
+    
+    <string name="title_text">视频查验</string>
+    
+    <string name="logout">注销</string>
+    <string name="makeSure">确定</string>
+    
+    <string name="tv_manifestNumber">报关单号</string>
+    
+    <string name="scan">扫描</string>
+    <string name="scannerResult">扫描中</string>
+    
+    <string name="save">暂存</string>
+    <string name="edit_goods_photo_upload">确认上传</string>
+    <string name="cancelUpload">取消上传</string>
+    <string name="cancel">取消</string>
+    
+  	<string name="saveImage">保存图片</string>
+    <string name="back">返回</string>
+    
+    <string name="search">查询</string>
+    <string name="search_result">查询结果</string>
+    
+    <string name="to">至</string>
+    
+    <string name="serialNum">序号</string>
+    
+    <string name="close">关闭</string>
+    
+    <string name="inspect">查看</string>
+    
+    <!-- Spinner标题  -->
+    <string name="spinner_RM2I1_inOrOutTitle">请选择进出口类型</string>
+    <string name="spinner_RM2I1_companyTypeTitle">请选择企业类型</string>
+    <string name="sp_RM2I4_score">请选择评分分数</string>
+    
+    <string name="sp_dayTitle">请选择天数</string>
+    
+    <string name="sp_RM3I1_stateTitle">请选择处理情况</string>
+    
+    <string name="sp_RM3I2_spinnerOneTitle">请选择一级海关区域</string>
+    <string name="sp_RM3I2_spinnerTwoTitle">请选择二级海关区域</string>
+    <string name="sp_RM3I2_spinnerThreeTitle">请选三级海关区域</string>
+    
+    <string name="sp_RM1I4_spinnerTitle">请选择上传修改人</string>
+    
+    <!-- 状态Spinner -->
+    <string-array name="sp_stateItemsText">
+        <item>10</item> <!-- 待审核 -->
+        <item>11</item> <!-- 待审核 -->
+        <item>52</item> <!-- 发还重申 -->
+    </string-array>
+    
+    <!-- 进出口Spinner -->
+    <string-array name="sp_InAndOutItemsText">
+        <item>进口</item>
+        <item>出口</item>
+        <item>全部</item>
+    </string-array>
+    
+    <!-- 处理情况Spinner -->
+    <string-array name="sp_stateArrOneItemsText">
+        <item>未填写查验结果</item>
+        <item>已填写查验结果</item>
+        <item>已移交单证</item>
+    </string-array>
+    <string-array name="sp_stateArrTwoItemsText">
+        <item>未处理</item>
+        <item>已处理</item>
+        <item>全部</item>
+    </string-array>
+    
+    <!-- 日Spinner -->
+    <string-array name="sp_dayItemsText">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+    <!-- 一级海关Spinner -->
+    <string-array name="sp_customFirstGradeItemsText">
+        <item>上海海关</item>
+    </string-array>
+    
+    <!-- 二级海关Spinner -->
+    <string-array name="sp_customSecondGradeItemsText">
+        <item>全部</item>
+        <item>浦江海关</item>
+        <item>淞江海关</item>
+        <item>浦东海关</item>
+    </string-array>
+    
+    <!-- 三级海关Spinner -->
+    <string-array name="sp_customThirdGradeItemsText">
+        <item>全部</item>
+        <item>办公室</item>
+        <item>现场一处</item>
+        <item>现场二处</item>
+    </string-array>
+    <!-- 1-4上传审核模块 -->
+    <string name="tv_RM1I4_dialog_text1">选择上传修改人</string>
+    <string name="tv_RM1I4_dialog_text2">审核意见</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_clace">关闭</string>
+    <!-- 分数Spinner -->
+    <string-array name="sp_scoreItemsText">
+        <item>--</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
+    <string name="compareString">3</string>
+    
+    <!-- 登陆界面 -->
+    <string name="log_user">工号:</string>
+    <string name="log_pass">密码:</string>
+    <string name="log_txt">登录</string>
+    <string name="log_clear">取消</string>
+    
+    <string name="et_loginUserNameHint">请输入工号</string>
+    <string name="et_loginPWDHint">请输入密码</string>
+    
+    <!-- 注销Dialog -->
+    <string name="titleMessage">温馨提示：</string>
+    <string name="sureExite">确定要退出系统？</string>
+    <string name="sureLogout">确定要注销用户？</string>
+    
+    <!-- 选择Dialog -->
+    <string name="titleChoose">选择：</string>
+    <string name="immediately_camera">立即拍照</string>
+    <string name="local_upload">本地上传</string>
+    
+    <!-- 删除图片Dialog -->
+    <string name="sureDelete">确定要删除此图片吗？</string>
+    
+    <string name="pic_zoom">图片缩放</string>
+   
+    <!-- 页面框架左侧主菜单 -->
+    <string name="nav_title1">查验工作区</string>
+    <string name="nav_title2">辅助决策支持</string>
+    <string name="nav_title3">工作量统计</string>
+    <string name="nav_title6">查验知识库</string>
+    <string name="nav_title7">系统设置</string>
+    
+    <string name="frameDemo_menu_waitCheck">待查验列表</string>
+    <string name="frameDemo_menu_stayImgs">查验单证查询</string>
+    <string name="frameDemo_menu_imgsRelated">查验图像上传</string>
+    <string name="frameDemo_menu_uploadAuditing">上传信息审核</string>
+    <string name="frameDemo_menu_checkBusinessMsg">企业信息查询</string>
+    <string name="frameDemo_menu_checkStockMsg">舱单信息查询</string>
+    <string name="frameDemo_menu_controlGoodsMsg">商品信息监控</string>
+    <string name="frameDemo_menu_allCheckLibrary">查验知识库</string>
+    <string name="frameDemo_menu_owerChecks">个人查验单证</string>
+    <string name="frameDemo_menu_department">科室查验单证</string>
+    <string name="frameDemo_menu_checkOfficialPerformance">查验关员绩效</string>
+    <string name="frameDemo_menu_checkDepartmentPerformance">查验部门绩效</string>
+
+    <string name="nav_item_title">添加新业务00</string>
+    
+    <!-- 右侧页面登录用户基本信息显示 -->
+    <string name="msg_num_name">工号：</string>
+    <string name="msg_num">22000</string>
+    <string name="msg_name_name">姓名：</string>
+    <string name="msg_name">玉雄雄</string>
+    <string name="msg_custom_name">关区：</string>
+    <string name="msg_custom">上海海关技术处</string>
+    <string name="msg_depart_name">科室：</string>
+    <string name="msg_depart">软件一科</string>
+
+    <!-- 待查验列表菜单-按钮 -->
+    <string name="tv_RM1I2_requestData">获取数据</string>
+    <string name="daiclb">待查验列表</string>
+    <string name="zancxx">暂存列表</string>
+    <string name="batch_upload">批量上传</string>
+    <string name="batch_handle">批量处理</string>
+    <!-- 待查验列表菜单-ListView -->
+    <string name="cygzDjclb_orderNumber">序号</string>
+    <string name="cygzDjclb_customsDeclarationNumber">报关单号</string>
+    <string name="cygzDjclb_operate">操作</string>
+    <!-- 待查验列表菜单-批量上传按钮界面 -->
+    <string name="choose_dept">您选择的报关单号为:</string>
+    <string name="camera_container_info">集装箱标志</string>
+    <string name="camera_container">集装箱箱体</string>
+    <string name="camera_goods">货物堆放情况</string>
+    
+    <!-- 图像单证关联菜单-按钮 -->
+    <string name="btn_goodsItem">商品项</string>
+    <string name="btn_RM1I2_upload">上传</string>
+    <!-- 图像单证关联菜单-详情按钮Dialog -->
+    <string name="BTN_RM1I2_detailTitle">报关单详细信息</string>
+    <string name="myNum">我的编号</string>
+    <string name="customNum">海关编号</string>
+    <string name="preRecordedNum">预录入编号</string>
+    <string name="imports_exports_port">进出口岸</string>
+    <string name="filingNum">备案号</string>
+    <string name="imports_exports_date">进(出)口日期</string>
+    <string name="imports_exports_RM1I3_date">进出日期</string>
+    <string name="declare_date">申报日期</string>
+    <string name="management_unit">经营单位</string>
+    <string name="transport_way">运输方式</string>
+    <string name="transport_tool_name">运输工具名称</string>
+    <string name="escort_num">押运单号</string>
+    <string name="receipt_unit">收货单位</string>
+    <string name="trade_way">贸易方式</string>
+    <string name="exempt_property">征免性质</string>
+    <string name="license_num">许可证号</string>
+    <string name="destination">起抵地</string>
+    <string name="load_unload_port">卸货港</string>
+    <string name="shipper_area">货主地区</string>
+    <string name="certifiacation_num">批文证号</string>
+    <string name="deal_way">成交方式</string>
+    <string name="freight">运费</string>
+    <string name="premium">保费</string>
+    <string name="fees">杂费</string>
+    <string name="contract_num">合同协议号</string>
+    <string name="number">件数</string>
+    <string name="packing_type">包装种类</string>
+    <string name="grossWeight">毛重（KG）</string>
+    <string name="netWeight">净重（KG）</string>
+    <string name="container_num">集装箱号</string>
+    <string name="attach_receipt">随附单据</string>
+    <string name="supervision_bin_num">监管仓号</string>
+    <string name="relate_manifestNum">关联报关单号</string>
+    <string name="relate_filing_num">关联备案号</string>
+    <string name="manifestType">报关单类型</string>
+    <string name="remark">备注</string>    
+  
+   <!-- 图像单证关联菜单-ListView -->
+    <string name="dialog_title">报关单详细信息</string>
+    <string name="goods_info">商品信息</string>
+    <string name="contract_project_num">项号</string>
+    <string name="goods_code">商品编码</string>
+    <string name="goods_name">商品名称</string>
+    <string name="specification_model">规格型号</string>
+    <string name="declare_amount">申报数量</string>
+    <string name="declare_unit">申报单位</string>
+    <string name="legal_amount">法定数量</string>
+    <string name="legal_measure_unit">法定计量单位</string>
+    <string name="legal_second_amount">法定第二数量</string>
+    <string name="originalCountry">原产国</string>
+    <string name="unit_price">单价</string>
+    <string name="total_price">总价</string>
+    <string name="deal_price">成交总价</string>
+    <string name="currency_value">币值</string>
+    <string name="exempt">征免</string>
+    <string name="application">用途</string>
+    
+    <!-- 查验图像留存菜单-按钮 -->
+    <string name="btn_RM1I3_detail">表体详情</string>
+    <string name="camera_form">商品拍照</string>
+    <!-- 查验图像留存菜单-Tab -->
+    <string name="transport_num">提运单号</string>
+    <string name="tv_RM1I3_text1">2013022211212143689</string>    
+    <string name="tv_RM1I3_text2">2013022211212143689</string>
+    <string name="tv_RM1I3_text3">杨浦海关</string>
+   
+    <string name="tv_RM1I3_text6">上海宝信公司</string>
+    <string name="tv_RM1I3_text7">水路</string>
+    <string name="tv_RM1I3_text8">轮船</string>
+    <string name="tv_RM1I3_text9">42335243533442534345</string>
+    <string name="tv_RM1I3_text10">全球物流（上海分公司）</string>
+    <!-- 查验图像留存菜单-ListView -->
+    <string name="contract_info">合同信息</string>
+    <string name="goods_hs">商品HS</string>
+    <string name="goods_RM1I3_name">品名</string>
+    <string name="reality_goods_hs">实际商品HS</string>
+    <string name="reality_goods_name">实际品名</string>
+    <string name="goods_specification_model">商品规格、型号</string>
+    <string name="operate">操作</string>
+    
+    <!-- 上传信息审核菜单-Table -->
+    <string name="upload_start_time">上传开始时间</string>
+    <string name="upload_end_time">上传结束时间</string>
+    <string name="upload_person_num">上传人(工号)</string>
+    <string name="RM1I4_state">状态</string>
+    <!-- 上传信息审核菜单-ListView -->
+    <string name="lv_title_RM1I4_text">审核信息列表</string>
+    <string name="upload_person">上传人</string>
+    <string name="upload_time">上传时间</string>
+    <string name="handle_effect">处置实效</string>
+    <string name="state">状态</string>
+    <string name="check_handle_state">查验处理情况</string>
+    <!-- 上传信息审核菜单隐藏页面1-Table -->
+    <string name="H200_check_handle_result">H2000查验处理结果</string>
+    <string name="retrun_checkAgain_reason">发还重审理由</string>
+    <string name="check_view">审核意见</string>
+    
+  	<string name="tv_check_text1">[ENTRY_ID]</string>
+    <string name="tv_check_text2">[EXEM_PROC_CODE]</string>
+    <string name="tv_check_text3">[START_NUM]</string>
+    <string name="tv_check_text4">[Reason]</string>
+    <string name="tv_check_text5">[Result]</string> 
+    <!-- 上传信息审核菜单隐藏页面1-按钮 -->
+    <string name="exitAlter">退回修改</string>
+    <string name="waitHandle">转待处理</string>
+    <!-- 上传信息审核菜单隐藏页面2-按钮 -->
+    <string name="alarmEnd">报警终止</string>
+    <string name="uploadAgain">重上传</string>
+    <string name="check">审核</string>
+    <string name="camera_container_pic">集装箱箱体照</string>
+    <string name="camera_goods_pic">货物堆放情况照</string>
+    <string name="camera_container_info_pic">集装箱标志照</string>
+    <!-- 上传信息审核菜单隐藏页面2-Table -->
+    <string name="check_alarm_symbol">审核报警标志</string>
+    <string name="check_customArea_department">查验关区、科室</string>
+    <string name="alarm_reason">报警原因</string>
+    
+    <string name="tv_checkAlarm_text1">[ENTRY_ID]</string>
+    <string name="tv_checkAlarm_text2">[EXEM_PROC_CODE]</string>
+    <string name="tv_checkAlarm_text3">[SH_ALARM]</string>
+    <string name="tv_checkAlarm_text4">[CustomSection]</string>
+    <string name="tv_checkAlarm_text5">[AlarmReason]</string>
+    <!-- 上传信息审核菜单隐藏页面按钮弹出对话框 -->
+    <string name="chooseCheckViewDialog_title">选择上传修改人和填写审核意见</string>
+    <string name="checkViewDialog_title">填写审核意见</string>
+
+    <!-- 企业信息查询菜单-Table -->
+    <string name="execute_control_time">布控时间</string>
+    <string name="imports_exports">进出口</string>
+    <string name="enterprise_type">企业类型</string>
+    <string name="enterprise_name">企业名称</string>
+    <string name="enterprise_code">企业代码</string>
+    <!-- 企业信息查询菜单-ListView -->
+    <string name="declare_batch_num">申报批数</string>
+    <string name="check_batch_num">查验批数</string>
+    <string name="check_rate">查验率（%）</string>
+    <string name="seize_batch_num">查获批数</string>
+    <string name="seize_rate">查获率（%）</string>
+    <string name="month">月份</string>
+    <string name="invole_tax_num">涉税数</string>
+    <string name="invole_document_num">涉证数</string>
+    <string name="invole_rights_num">涉侵权数</string>
+    <string name="invole_militaryProduct_num">涉军品数</string>
+    <string name="seize_privateCase_num">缉私立案数</string>
+
+    <!-- 查验信息知识库菜单-Table -->
+    <string name="score">分数</string>    
+    <!-- 查验信息知识库菜单-Tab -->
+    <string name="tv_RM2I4_tab1">典型查获商品信息</string>
+    <string name="tv_RM2I4_tab2">查询风险要点</string>
+    <string name="tv_RM2I4_tab3">监管条件</string>
+    <string name="tv_RM2I4_tab4">标准化商品信息</string>
+    <!-- 查验信息知识库菜单-ListView1 -->
+    <string name="seizeItem_goods_name">查获项商品名</string>
+    <string name="seizeItem_declare_taxNum">查获项申报税号</string>
+    <string name="H2000_handle_result">H2000处理结果</string>
+    <string name="seize_view_hint">查获意见提示</string>
+    <string name="check_handle_effect">查验处置实效</string>
+    <string name="excellent_degree">优秀程度</string>
+    <string name="pic_interaction_info">图像交互信息</string>
+    <!-- 查验信息知识库菜单-ListView1-Dialog1 -->
+    <string name="checkHandleEffect_text1">改单放行</string>
+    <string name="manifest_handld_effect">报关单******************处置实效</string>
+    <string name="delete_alter_manifest_record">报关单删改记录</string>
+    <string name="alter_manifest_time">改单时间</string>
+    <string name="alter_manifest_person">改单人</string>
+    <string name="alter_project_num">修改项号</string>
+    <string name="alter_fieldName">修改字段名</string>
+    <string name="alter_front_field_content">修改前字段内容</string>
+    <string name="alter_behind_field_content">修改后字段内容</string>
+    <!-- 查验信息知识库菜单-ListView1-Dialog2 -->
+    <string name="upload_info">上传信息</string>
+    <string name="goods_package_pic">货物包装近照</string>
+    <string name="goods_pic">商品近照</string>
+    <string name="container_inner_pic">集装箱内景照</string>
+    <string name="goods_specification_model_pic">商品规格型号照</string>
+    <string name="another_special_request_pic">其他特殊要求照</string>
+    <string name="video">视频</string>
+    <string name="scene_src_pic">现场认定资料照</string>
+    
+    <string name="tv_uploadPicInfo_text1">[ENTRY_ID_H]</string>    
+    <string name="tv_uploadPicInfo_text2">[G_NO_H]</string>
+    <string name="tv_uploadPicInfo_text3">[CODE_TS_H]</string>
+    <string name="tv_uploadPicInfo_text4">[G_NAME_H]</string>
+    <string name="tv_uploadPicInfo_text5">/</string>
+    <string name="tv_uploadPicInfo_text6">/</string>
+    <string name="tv_uploadPicInfo_text7">相关视频</string>
+    <string name="tv_uploadPicInfo_text8">/</string>
+    
+    <string name="tv_uploadPic_text1">[ENTRY_ID_H]</string>
+    <string name="tv_uploadPic_text2">[G_NO_H]</string>
+    <string name="tv_uploadPic_text3">[CODE_TS_H]</string>
+    <string name="tv_uploadPic_text4">[G_NAME_H]</string>
+    <string name="tv_uploadPic_text5">/</string>
+    <string name="tv_uploadPic_text6">/</string>
+    <string name="tv_uploadPic_text7">相关视频</string>
+    <string name="tv_uploadPic_text8">/</string>
+    <!-- 查验信息知识库菜单-ListView2 -->
+    <string name="goods_RM2I4_name">商品品名</string>
+    <string name="goods_tax_num">商品税号</string>
+    <string name="check_risk_point">查验风险要点</string>
+    <!-- 查验信息知识库菜单-ListView3 -->
+    <string name="effect_date">生效日期</string>
+    <string name="temp_reduction_mark">临时减免标志</string>
+    <string name="end_date">截止日期</string>
+    <string name="ieCustomRate_low">进口关税率/低</string>
+    <string name="ieCustomRate_common">进口关税率/普</string>
+    <string name="exportPriceCustomRate">出口从价关税率</string>
+    <string name="addedTaxRate">增值税率</string>
+    <string name="first_measure_unit">第一计量单位</string>
+    <string name="supervision_request">监管要求</string>
+    <!-- 查验信息知识库菜单-ListView4 -->
+    <string name="goods_check_hint">商品查验提示</string>
+    <string name="look">查看</string>
+    <!-- 查验信息知识库菜单-ListView4-Dialog -->
+    <string name="reference_tax_num">参考税号</string>
+    <string name="pack">包装</string>
+    <string name="appearance">外观</string>
+    <string name="goods_relation_pic">商品相关图片</string>
+    
+    <string name="tv_checkRecord_text1">齿轮</string>
+    <string name="tv_checkRecord_text2">8483900</string>
+    <string name="tv_checkRecord_text3">/</string>
+    <string name="tv_checkRecord_text4">/</string>
+    <string name="tv_checkRecord_text5">品牌；型号（可核零件编号）；用途（该核机械用还是机动车辆用，两者存在差异，且存在税差）</string>
+    
+    <!-- 个人查验单证列表菜单-Table -->
+    <string name="info_hint_self">信息提示（本人）</string>
+    <string name="near">近</string>
+    <string name="day">日</string>
+    <string name="self_document_handle_state">本人单证处理情况</string>
+    <string name="already_dispatch_no_fillOut_check_result_amount">已派单未填写查验结果数量</string>
+    <string name="already_fillOut_check_result_amount">已填写查验结果数量</string>
+    <string name="total_move_document_amount">共移交单证数量</string>
+    <string name="already_handle_document_amount">已处理完毕单证数量</string>
+    <string name="no_handle_document_amount">尚未处理单证数量</string>
+	<string name="tv_look">查看</string>
+    
+    <string name="handle_state">处理情况</string>
+    <string name="check_result_input_time">查验结果录入时间</string>
+    <string name="manifestCode">报关单编号</string>
+    <string name="first_goods_name">第一品名</string>
+    <string name="check_time">查验时间</string>
+    <string name="check_way">查验方式</string>
+    <string name="check_custom_officer">查验关员</string>
+    <string name="check_handle_view">查验处理意见</string>
+    <string name="check_handle_result">查验处理结果</string>
+    <string name="check_record">查验记录</string>
+    
+    <!-- 查验记录-Dialog -->
+    <string name="custom_goods_check_record">海关货物查验记录单</string>
+    <string name="check_recordNumber">查验记录单号</string>
+    <string name="check_request">查验要求</string>
+    <string name="local_custom_check_request">地方关查验要求</string>
+    <string name="safe_hint">安全提示</string>
+    <string name="another_special_request">其他特殊要求</string>
+    <string name="check_designee">查验指派人</string>
+    <string name="checkPersonOne">查验人一</string>
+    <string name="checkPersonTwo">查验人二</string>
+    <string name="checkPersonThree">查验人三</string>
+    <string name="artificialCheckTime">人工查验时间</string>
+    <string name="artificialCheckPlace">人工查验地点</string>
+    <string name="artificialCheckResult">人工查验结果</string>
+    <string name="artificialCheckHandleView">人工查验处理意见</string>
+    <string name="artificialCheckRecord">人工查验记录</string>
+    <string name="machineInspectPersonOne">机检人一</string>
+    <string name="machineInspectPersonTwo">机检人二</string>
+    <string name="machineInspectCheckTime">机检查验时间</string>
+    <string name="machineInspectCheckPlace">机检查验地点</string>
+    <string name="machineInspectCheckResult">机检查验结果</string>
+    <string name="machineInspectCheckHandleView">机检查验处理意见</string>
+    <string name="machineInspectCheckRecord">机检查验记录</string>
+    <string name="checkResultRegisterTime">查验结果登记时间</string>
+    <string name="checkResultRegisterPerson">查验结果登记人</string>
+    <string name="checkHandleResult">查验处理结果</string>
+    <string name="handleResultInput">处理结果录入</string>
+    <string name="handleResultInputTime">处理结果录入时间</string>
+
+    <string name="tv_text1">2013022211212143688</string>    
+    <string name="tv_text2">2013022211212143688</string>
+    <string name="tv_text3">无查验要求</string>
+    <string name="tv_text4">无查验要求</string>
+    <string name="tv_text5">/</string>
+    <string name="tv_text6">无相关安全提示</string>
+    <string name="tv_text7">无其他特殊要求</string>
+    <string name="tv_text8">人工</string>
+    <string name="tv_text9">严国章</string>
+    <string name="tv_text10">孙伟山</string>
+    <string name="tv_text11">曹志勇</string>
+    <string name="tv_text12">/</string>
+    <string name="tv_text13">2011年12月31日</string>
+    <string name="tv_text14">上海市</string>
+    <string name="tv_text15">无人工查验结果</string>
+    <string name="tv_text16">无人工查验处理意见</string>
+    <string name="tv_text17">无人工查验记录</string>
+    <string name="tv_text18">/</string>
+    <string name="tv_text19">/</string>
+    <string name="tv_text20">/</string>
+    <string name="tv_text21">/</string>
+    <string name="tv_text22">/</string>
+    <string name="tv_text23">/</string>
+    <string name="tv_text24">/</string>
+    <string name="tv_text25">严国章</string>
+    <string name="tv_text26">2012年1月4日</string>
+    <string name="tv_text27">/</string>
+    <string name="tv_text28">/</string>
+    <string name="tv_text29">2012年1月4日</string>
+    
+    <!-- 科室查验单证列表菜单-Table -->
+    <string name="info_hint_fullCert">信息提示（全科）</string>
+    <string name="fullCert_handle_document_state">全科处理单证情况</string>
+    
+    <string name="tv_fillCert_ticket_text1">62票</string>
+    <string name="tv_fillCert_ticket_text2">1票</string>
+    <string name="tv_fillCert_ticket_text3">0票</string>
+    <string name="tv_fillCert_ticket_text4">0票</string>
+    <string name="tv_fillCert_ticket_text5">0票</string>
+            
+    <string name="custom_department">海关部门</string>
+    <string name="define_time">自定义时间</string>
+
+    <!-- 查验官员工作绩效菜单-Table -->
+    <string name="check_unit">查验单位</string>
+    <!-- 查验官员工作绩效菜单-ListView -->
+    <string name="custom_officer_num">关员工号</string>
+    <string name="custom_officer_name">关员姓名</string>
+    <string name="check_batch">查验批次</string>
+    <string name="seize_batch">查获批次</string>
+
+    <!-- 查验部门工作绩效菜单-Table -->
+    <string name="check_type">查询类型</string>
+    <string name="output_format">输出格式</string>
+    <string name="form">表格</string>
+    
+    <!-- 查验部门工作绩效菜单-ListView1 -->
+    <string name="artificialCheck">人工查验</string>
+    <string name="artificialCheckInfo">人工查验信息</string>
+    <string name="unit_name">单位名称</string>
+    <string name="artificial_check_batch">人工查验批次</string>
+    <string name="artificial_check_naturalBin_num">人工查验自然箱量</string>
+    <string name="artificial_seize_naturalBin_num">人工查获自然箱量</string>
+    <string name="artificial_check_bulk_num">人工查验散货数</string>
+    <string name="artificial_seize_batch">人工查获批次</string>
+    <string name="artificial_check_seize_rate">人工查验查获率（%）</string>
+    <string name="artificial_dayMax_check_batch">人工日最高查验批次</string>
+    <string name="artificial_move_batch_num">人工移送批数</string>
+    <string name="artificial_move_rate">人工移送率（%）</string>
+    <!-- 查验部门工作绩效菜单-ListView2 -->
+    <string name="machineInspectCheck">机检查验</string>
+    <string name="machineInspectCheckInfo">机检查验信息</string>
+    <string name="machineInspect_check_batch">机检查验批次</string>
+    <string name="machineInspect_check_naturalBin_num">机检查验自然箱量</string>
+    <string name="machineInspect_seize_naturalBin_num">机检查获自然箱量</string>
+    <string name="machineInspect_check_bulk_num">机检查验散货数</string>
+    <string name="machineInspect_seize_batch">机检查获批次</string>
+    <string name="machineInspect_check_seize_rate">机检查验查获率（%）</string>
+    <string name="machineInspect_dayMax_check_batch">机检日最高查验批次</string>
+    <string name="machineInspect_move_batch_num">机检移送批数</string>
+    <string name="machineInspect_move_rate">机检移送率（%）</string>
+    <!-- 查验部门工作绩效菜单-ListView3 -->
+    <string name="total">合计</string>
+    <string name="totalInfo">合计信息</string>
+    <string name="total_naturalBin_num">总自然箱量</string>
+    <string name="through_check_num">彻底查验数</string>
+    <string name="inspect_check_num">抽查查验数</string>
+    <string name="shape_check_num">外形查验数</string>
+    <string name="total_seize_rate">总查获率（%）</string>
+    
+    <string name="total_check_batch">合计查验批次</string>
+    <string name="total_check_naturalBin_num">合计查验自然箱量</string>
+    <string name="total_seize_naturalBin_num">合计查获自然箱量</string>
+    <string name="total_check_bulk_num">合计查验散货数</string>
+    <string name="total_seize_batch">合计查获批次</string>
+    <string name="total_check_seize_rate">合计查验查获率（%）</string>
+    <string name="total_dayMax_check_batch">合计日最高查验批次</string>
+    <string name="total_move_batch_num">合计移送批数</string>
+    <string name="total_move_rate">合计移送率（%）</string>
+    
+    
+    
+    <string name="check_new_version">检测新版本</string>
+    
+    <!-- 企业信息查询菜单-Table
+    <string name="qyxxcx_table_info1">布控时间</string>
+    <string name="qyxxcx_table_info2">进出口</string>
+    <string name="qyxxcx_table_info3">企业类型</string>
+    <string name="qyxxcx_table_info4">企业名称</string>
+    <string name="qyxxcx_table_info5">企业代码</string>
+    -->
+
+    <!-- 查验信息知识库菜单-ListView
+    <string name="tv_RM2I4_title">查询结果</string>
+    -->
+    
+    <!-- MyAsynTask异步任务加载数据的提示语句： -->
+    <string name="dialog_titleText">温馨提示：</string>
+    <string name="dialog_contentText">正在请求后台数据，请耐心等待....</string>
+    
+    <!-- 查验关员绩效 -->
+    <string name="tv_send">移送批数</string>
+    <string name="tv_sendRate">移送率</string>
+    <string name="tv_catchCert">查获（涉证）数</string>
+    <string name="tv_catchTax">查获（涉税）数</string>
+    <string name="tv_catchDellete">查获（删改）数</string>
+    <string name="tv_catchOther">查获（其它）数</string>
+    <string name="tv_aboutPower">涉侵权数</string>
+    <string name="tv_aboutArmy">涉军品数</string>
+    <string name="tv_catchCase">缉私立案数</string>
+    
+    <!-- 图片上传 -->
+    <string name="txv_upload">上传</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_send">发送</string>
+</resources>

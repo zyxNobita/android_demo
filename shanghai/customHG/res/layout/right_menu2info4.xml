@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/table"
+        style="@style/LV_TableTop" >
+
+        <LinearLayout style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_left_top"
+                android:text="@string/tv_manifestNumber" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/et_menu2Info4_number"
+                    style="@style/LV_TableTopET"
+                    android:layout_weight="1"
+                    android:hint="@null" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/goods_RM2I4_name" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/et_menu2Info4_goodsName"
+                    style="@style/LV_TableTopET"
+                    android:layout_weight="1"
+                    android:hint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:contentDescription="@null"
+            style="@style/LV_TableTopDivide" />
+
+        <LinearLayout style="@style/LV_TableTopRowLV" >
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_left_bottom"
+                android:text="@string/score" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <Spinner
+                    android:id="@+id/sp_RM2I4_score"
+                    style="@style/LV_TableTopSPINNER"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/LV_TableTopTV"
+                android:background="@drawable/table_normal"
+                android:text="@string/goods_tax_num" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <EditText
+                    android:id="@+id/et_menu2Info4_goodsDutyNumber"
+                    style="@style/LV_TableTopET"
+                    android:layout_weight="1"
+                    android:hint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LV_Search" >
+
+        <Button
+            android:id="@+id/btn_menu2Info4_submit"
+            style="@style/Btn_Search" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_rightMenu2Info4ChangeOne"
+            style="@style/PAGE_WIDTH_AND_HEIGHT"
+            android:layout_alignParentLeft="true" >
+
+            <ImageButton
+                android:id="@+id/ib_pageTab1"
+               	style="@style/PAGE_WIDTH_AND_HEIGHT"
+                android:background="@drawable/left2"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_RM2I4Tab1"
+                style="@style/PAGE_TEXTVIEW"
+                android:background="@drawable/leftcontent2"
+                android:text="@string/tv_RM2I4_tab1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rightMenu2Info4ChangeTwo"
+            style="@style/PAGE_WIDTH_AND_HEIGHT"
+            android:layout_alignTop="@id/ll_rightMenu2Info4ChangeOne"
+            android:layout_toRightOf="@id/ll_rightMenu2Info4ChangeOne" >
+
+            <ImageButton
+                android:id="@+id/ib_pageTab2"
+                style="@style/PAGE_WIDTH_AND_HEIGHT"
+                android:background="@drawable/left3"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_RM2I4Tab2"
+                style="@style/PAGE_TEXTVIEW"
+                android:background="@drawable/leftcontent_1"
+                android:text="@string/tv_RM2I4_tab2" />
+        </LinearLayout>
+
+        <LinearLayout
+           	android:id="@+id/ll_rightMenu2Info4ChangeThree"
+            style="@style/PAGE_WIDTH_AND_HEIGHT"
+            android:layout_alignTop="@id/ll_rightMenu2Info4ChangeTwo"
+            android:layout_toRightOf="@id/ll_rightMenu2Info4ChangeTwo" >
+
+            <ImageButton
+                android:id="@+id/ib_pageTab3"
+                style="@style/PAGE_WIDTH_AND_HEIGHT"
+                android:background="@drawable/left3"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_RM2I4Tab3"
+                style="@style/PAGE_TEXTVIEW"
+                android:background="@drawable/leftcontent_1"
+                android:text="@string/tv_RM2I4_tab3"/>
+        </LinearLayout>
+        
+        <LinearLayout
+          android:id="@+id/ll_rightMenu2Info4ChangeFour"
+            style="@style/PAGE_WIDTH_AND_HEIGHT"
+            android:layout_alignTop="@id/ll_rightMenu2Info4ChangeThree"
+            android:layout_toRightOf="@id/ll_rightMenu2Info4ChangeThree">
+
+            <ImageButton
+                android:id="@+id/ib_pageTab4"
+              	style="@style/PAGE_WIDTH_AND_HEIGHT"
+                android:background="@drawable/left3"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tv_RM2I4Tab4"
+                style="@style/PAGE_TEXTVIEW"
+                android:background="@drawable/leftcontent_1"
+                android:text="@string/tv_RM2I4_tab4" />
+
+            <ImageButton
+                android:id="@+id/ib_pageTab5"
+                style="@style/PAGE_WIDTH_AND_HEIGHT"
+                android:background="@drawable/right1"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <!--
+        <Button
+            android:id="@+id/btn_RM2I4_refurbish"
+            style="@style/REFURBISH" />-->
+        
+        <Button
+            android:id="@+id/btn_RM2I4_refurbish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/icon_refurbish" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu2info4_listview_first" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu2info4_listview_second" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu2info4_listview_third" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu2info4_listview_forth" />
+
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_gravity="center"
+	    >
+	    <TextView 
+	    android:id="@+id/tv_pageAgo"
+	     android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginRight="50dp"
+	    android:background="@drawable/icon_agopage" />
+	
+	<TextView 
+	    android:id="@+id/tv_pageNext"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_marginRight="50dp"
+	    android:background="@drawable/icon_nextpage" />
+	</LinearLayout>
+</LinearLayout>

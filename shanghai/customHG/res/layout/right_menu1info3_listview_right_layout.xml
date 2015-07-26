@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/camera_form"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="501dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/goods_RM1I3_name"
+                android:textSize="22sp" />
+
+            <!--
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/reality_goods_hs"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/reality_goods_name"
+                android:textSize="22sp" />
+            -->
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="501dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/goods_specification_model"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="501dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/declare_amount"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/declare_unit"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview7"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/legal_amount"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview8"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/legal_measure_unit"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview9"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/originalCountry"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview10"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/unit_price"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview11"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/total_price"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview12"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/deal_price"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview13"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/currency_value"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview14"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/exempt"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textview15"
+                android:layout_width="501dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/application"
+                android:textSize="22sp" />
+
+            <!--
+            <TextView
+                android:id="@+id/textview16"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/operate"
+                android:textSize="22sp" />
+            -->
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divide"
+            android:contentDescription="@null" />
+
+        <com.bai.demo.utils.MyListView
+            android:id="@+id/lv_RM1I3_right_layout_listView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000" >
+        </com.bai.demo.utils.MyListView>
+
+        <View style="@style/LV_HorazitLine" />
+    </LinearLayout>
+
+</HorizontalScrollView>

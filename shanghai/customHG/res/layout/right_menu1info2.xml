@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/tv_manifestNumber"
+                android:textSize="22sp" />
+            
+                <EditText
+                    android:id="@+id/et_RM1I2_barCode"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/editbg"
+                    android:paddingLeft="15dp"
+                    android:hint="@null" />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/btn_RM1I2_scan"
+            style="@style/Btn_AllButton"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/butten_seletor"
+            android:text="@string/scan" />
+        
+        <Button
+            android:id="@+id/btn_RM1I2_makeSure"
+            style="@style/Btn_AllButton"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/butten_seletor"
+            android:text="@string/search" />
+        
+        <Button
+            android:id="@+id/btn_RM1I2_detail"
+            style="@style/Btn_AllButton"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/butten_seletor"
+            android:text="@string/btn_goodsItem" />
+        
+        <Button
+            android:id="@+id/btn_RM1I2_upload"
+            style="@style/Btn_AllButton"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/butten_seletor"
+            android:text="@string/btn_RM1I2_upload" />
+    </LinearLayout>
+    
+  	<!-- 加载  表头的布局文件Table列表 -->
+    <include
+        android:layout_marginTop="5dp"
+        layout="@layout/right_menu1info2_table_top" />
+
+    <!-- 加载  单个报关单的的布局文件 -->
+    <include 
+        android:id="@+id/View_takeTableBodyPhotos"
+        layout="@layout/right_pic_interaction_info"/>
+    <!-- 
+    <include
+        android:id="@+id/cytxlcBottomInclude"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        layout="@layout/right_menu1info2_listview" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/Btn_AllButton"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/butten_seletor"
+            android:text="@string/save" />
+
+        <Button
+            style="@style/Btn_AllButton"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/butten_seletor"
+            android:text="@string/edit_goods_photo_upload"/>
+
+        <Button
+            style="@style/Btn_AllButton"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/butten_seletor"
+            android:text="@string/log_clear" />
+    </LinearLayout> -->
+    </LinearLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <!-- 查看表体的信息 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <LinearLayout 
+                android:id="@+id/lr_upload_pic_info"
+                style="@style/LV_TableTop" >
+                
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/tv_manifestNumber" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+                            
+                            <TextView
+                                android:id="@+id/tv_uploadPicInfo_text1"
+                                style="@style/LV_TableTopInnersTV"
+                                android:text="@string/tv_uploadPicInfo_text1" />
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/contract_project_num" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_uploadPicInfo_text2"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_uploadPicInfo_text2" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+                
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/goods_hs" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_uploadPicInfo_text3"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_uploadPicInfo_text3" />
+                    </LinearLayout>
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/goods_RM1I3_name" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_uploadPicInfo_text4"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_uploadPicInfo_text4" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+                
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicInfoSecond_show_1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TAKEPHOTO_RELATION_THREE">
+                    
+                    <Button
+                        android:id="@+id/btn_uploadPicInfoSecond_show_1"
+                        style="@style/BTN_TakeCameraToShowUp" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicInfoSecond_show_1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicInfoSecond_show_1"
+                        android:gravity="center"
+                        android:text="@string/goods_package_pic"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_uploadPicInfo_second_1"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" >
+                    
+                    <Gallery
+                        android:id="@+id/gl_uploadPicInfo_goodsPackagePhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicInfoSecond_show_2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TAKEPHOTO_RELATION_THREE">
+                    
+                    <Button
+                        android:id="@+id/btn_uploadPicInfoSecond_show_2"
+                        style="@style/BTN_TakeCameraToShowUp" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicInfoSecond_show_2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicInfoSecond_show_2"
+                        android:gravity="center"
+                        android:text="@string/goods_pic"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_uploadPicInfo_second_2"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" >
+                    
+                    <Gallery
+                        android:id="@+id/gl_uploadPicInfo_goodsPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicInfoSecond_show_3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TAKEPHOTO_RELATION_THREE">
+                    
+                    <Button
+                        android:id="@+id/btn_uploadPicInfoSecond_show_3"
+                        style="@style/BTN_TakeCameraToShowUp" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicInfoSecond_show_3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicInfoSecond_show_3"
+                        android:gravity="center"
+                        android:text="@string/container_inner_pic"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_uploadPicInfo_second_3"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" >
+                    
+                    <Gallery
+                        android:id="@+id/gl_uploadPicInfo_containerInnerPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicInfoSecond_show_4"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TAKEPHOTO_RELATION_THREE">
+                    
+                    <Button
+                        android:id="@+id/btn_uploadPicInfoSecond_show_4"
+                        style="@style/BTN_TakeCameraToShowUp" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicInfoSecond_show_4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicInfoSecond_show_4"
+                        android:gravity="center"
+                        android:text="@string/goods_specification_model_pic"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_uploadPicInfo_second_4"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" >
+                    
+                    <Gallery
+                        android:id="@+id/gl_uploadPicInfo_goodsSpecModelPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicInfoSecond_show_5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TAKEPHOTO_RELATION_THREE">
+                    
+                    <Button
+                        android:id="@+id/btn_uploadPicInfoSecond_show_5"
+                        style="@style/BTN_TakeCameraToShowUp" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicInfoSecond_show_5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicInfoSecond_show_5"
+                        android:gravity="center"
+                        android:text="@string/another_special_request_pic"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_uploadPicInfo_second_5"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" >
+                    
+                    <Gallery
+                        android:id="@+id/gl_uploadPicInfo_anotherSpecialRequestPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+                
+                <RelativeLayout
+                    android:id="@+id/layout_uploadPicInfoSecond_show_6"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/TAKEPHOTO_RELATION_THREE">
+                    
+                    <Button
+                        android:id="@+id/btn_uploadPicInfoSecond_show_6"
+                        style="@style/BTN_TakeCameraToShowUp" />
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignTop="@id/btn_uploadPicInfoSecond_show_6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/btn_uploadPicInfoSecond_show_6"
+                        android:gravity="center"
+                        android:text="@string/scene_src_pic"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_uploadPicInfo_second_6"
+                    style="@style/TAKEPHOTO_LIENA"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" >
+                    
+                    <Gallery
+                        android:id="@+id/gl_uploadPicInfo_sceneSrcPhoto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="10dp"
+                        android:layout_marginLeft="-500dp" />
+                </LinearLayout>
+             
+            </LinearLayout>            
+        </ScrollView>        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center" >
+        
+        <Button
+            android:id="@+id/btn_dialogClose"
+            style="@style/BG_TC_TS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close" />
+    </LinearLayout>
+
+</LinearLayout>

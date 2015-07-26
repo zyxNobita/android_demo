@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ib_RM1I3_toTakePhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/camera"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View style="@style/LV_VerticalLine" />
+    
+    <TextView
+        android:id="@+id/textview1"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="500dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+   <!--  <TextView
+        android:id="@+id/textview2"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="300dp" />
+
+    <TextView
+        android:id="@+id/textview3"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="300dp" /> -->
+        
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview4"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="500dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview5"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="500dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview6"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview7"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview8"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview9"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview10"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview11"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview12"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview13"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview14"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View style="@style/LV_VerticalLine" />
+
+    <TextView
+        android:id="@+id/textview15"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="500dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <!--
+    <View style="@style/LV_VerticalLine" />
+    
+    <TextView
+        android:id="@+id/textview16"
+        style="@style/LV_TV_ITEMS"
+        android:layout_width="300dp" />-->
+
+</LinearLayout>

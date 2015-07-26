@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_index_title"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/guanqu_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/guanqu_txt"
+            style="@style/selectorFontColor"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gq" />
+
+        <TextView
+            android:id="@+id/guanqu_txt_selector"
+            style="@style/frameTitleFontColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableRight="@drawable/icon_arrow"
+            android:ellipsize="marquee" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_popup" />
+
+    <LinearLayout
+        android:id="@+id/date_from_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/date_from_txt"
+            style="@style/selectorFontColor"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date_from" />
+
+        <TextView
+            android:id="@+id/date_from_txt_selector"
+            style="@style/frameTitleFontColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icon_arrow"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/divide_popup" />
+
+    <LinearLayout
+        android:id="@+id/date_to_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_selector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/date_to_txt"
+            style="@style/selectorFontColor"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date_to" />
+
+        <TextView
+            android:id="@+id/date_to_txt_selector"
+            style="@style/frameTitleFontColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icon_arrow"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/search_text" />
+
+</LinearLayout>

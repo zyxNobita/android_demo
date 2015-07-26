@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_rightShowCheckPicture"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="@string/choose_dept"
+            android:textSize="22sp" />
+
+        <Gallery
+            android:id="@+id/gl_RM1I1_numberList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        style="@style/LV_TableTopDivide"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:id="@+id/layout_RM1I1_RMISecond"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_RMISecond_show_1"
+            style="@style/TAKEPHOTO_RELATION"
+            android:background="@drawable/show_btn_bg_down" >
+
+            <Button
+                android:id="@+id/btn_RMISecond_show_1"
+                style="@style/BTN_TakeCameraToShowUp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/btn_RMISecond_show_1"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/btn_RMISecond_show_1"
+                android:gravity="center"
+                android:text="@string/camera_container"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/IB_RM1I1_takeCameraOne"
+                style="@style/BTN_TakeCameraUp"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_RM1I1_second_1"
+            style="@style/TAKEPHOTO_LIENA"
+            android:visibility="visible" >
+            
+            <Gallery
+                android:id="@+id/gl_RM1I1_containerPic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spacing="10dp"
+                android:layout_marginLeft="-500dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_RMISecond_show_2"
+            style="@style/TAKEPHOTO_RELATION"
+            android:background="@drawable/show_btn_bg_up" >
+
+            <Button
+                android:id="@+id/btn_RMISecond_show_2"
+                style="@style/BTN_TakeCameraToShowUp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/btn_RMISecond_show_2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/btn_RMISecond_show_2"
+                android:gravity="center"
+                android:text="@string/camera_goods"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/IB_RM1I1_takeCameraTwo"
+                style="@style/BTN_TakeCameraUp"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_RM1I1_second_2"
+            style="@style/TAKEPHOTO_LIENA"
+            android:visibility="gone" >
+
+            <Gallery
+                android:id="@+id/gl_RM1I1_goodsPic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spacing="10dp"
+                android:layout_marginLeft="-500dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_RMISecond_show_3"
+            style="@style/TAKEPHOTO_RELATION"
+            android:background="@drawable/show_btn_bg_up" >
+
+            <Button
+                android:id="@+id/btn_RMISecond_show_3"
+                style="@style/BTN_TakeCameraToShowUp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignTop="@id/btn_RMISecond_show_3"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/btn_RMISecond_show_3"
+                android:gravity="center"
+                android:text="@string/camera_container_info"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/IB_RM1I1_takeCameraThree"
+                style="@style/BTN_TakeCameraUp"
+                android:contentDescription="@null" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_RM1I1_second_3"
+            style="@style/TAKEPHOTO_LIENA"
+            android:visibility="gone" >
+            
+            <Gallery
+                android:id="@+id/gl_RM1I1_containerInfoPic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spacing="10dp"
+                android:layout_marginLeft="-500dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_RM1I1_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_RM1I1_saveEntryData"
+            style="@style/Btn_Search"
+            android:layout_marginRight="20dp"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/btn_RM1I1_claneBack"
+            style="@style/Btn_Search"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

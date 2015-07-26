@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 填写审核意见 -->
+    <LinearLayout
+        android:id="@+id/ll_RM1I4_checkViewDialog"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	    <EditText
+	        android:id="@+id/et_RM1I4CheckViewDialog_editText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:hint="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+        
+        <Button
+            android:id="@+id/btn_RM1I4CheckViewDialog_sure"
+            style="@style/Btn_Search"
+            android:layout_marginRight="20dp"
+            android:text="@string/makeSure" />
+        
+        <Button
+            android:id="@+id/btn_RM1I4CheckViewDialog_close"
+            style="@style/Btn_Search"
+            android:layout_marginRight="20dp"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

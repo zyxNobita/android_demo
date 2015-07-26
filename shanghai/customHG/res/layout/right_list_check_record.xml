@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+            <LinearLayout
+                android:id="@+id/lr_check"
+                style="@style/LV_TableTop" >
+                
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/tv_manifestNumber" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_text1"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text1" />
+                    </LinearLayout>
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/check_recordNumber" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                        
+                        <TextView
+                            android:id="@+id/tv_text2"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text2" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/check_request" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text3"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text3" />
+                    </LinearLayout>
+                </LinearLayout>
+            
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                 <LinearLayout style="@style/LV_TableTopRowLV" >
+             
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/local_custom_check_request" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text4"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text4" />
+                    </LinearLayout>
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/remark" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text5"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text5" />
+                    </LinearLayout>
+                </LinearLayout>
+            
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+             
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/safe_hint" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text6"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text6" />
+                    </LinearLayout>
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/another_special_request" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text7"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text7" />
+                    </LinearLayout>
+                </LinearLayout>
+            
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+             
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/check_way" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text8"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text8" />
+                    </LinearLayout>
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/check_designee" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text9"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text9" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+             
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/checkPersonOne" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text10"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text10" />
+                    </LinearLayout>
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/checkPersonTwo" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text11"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text11" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/checkPersonThree" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text12"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text12" />
+                    </LinearLayout>
+             
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/artificialCheckTime" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text13"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text13" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/artificialCheckPlace" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text14"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text14" />
+                    </LinearLayout>
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/artificialCheckResult" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text15"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text15" />
+                    </LinearLayout>
+                </LinearLayout>
+            
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+             
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/artificialCheckHandleView" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text16"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text16" />
+                    </LinearLayout>
+                    
+                                        <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/artificialCheckRecord" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text17"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text17" />
+                    </LinearLayout>
+                </LinearLayout>
+            
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/machineInspectPersonOne" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text18"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text18" />
+                    </LinearLayout>
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/machineInspectPersonTwo" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text19"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text19" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+             
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/machineInspectCheckTime" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text20"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text20" />
+                    </LinearLayout>
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/machineInspectCheckPlace" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text21"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text21" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+             
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/machineInspectCheckResult" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text22"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text22" />
+                    </LinearLayout>
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/machineInspectCheckHandleView" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text23"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text23" />
+                    </LinearLayout>
+                </LinearLayout>
+            
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/machineInspectCheckRecord" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text24"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text24" />
+                    </LinearLayout>
+                    
+                                        <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/checkResultRegisterTime" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text25"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text25" />
+                    </LinearLayout>
+                </LinearLayout>
+            
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/checkResultRegisterPerson" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text26"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text26" />
+                    </LinearLayout>
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/checkHandleResult" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text27"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text27" />
+                    </LinearLayout>
+                </LinearLayout>
+            
+                <ImageView
+                    android:contentDescription="@null"
+                    style="@style/LV_TableTopDivide" />
+
+                <LinearLayout style="@style/LV_TableTopRowLV" >
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/handleResultInput" />
+                    
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                         <TextView
+                             android:id="@+id/tv_text28"
+                             style="@style/LV_TableTopInnersTV"
+                             android:text="@string/tv_text28" />
+                    </LinearLayout>
+                    
+                    <TextView
+                        style="@style/LV_CheckTV"
+                        android:background="@drawable/table_left_top"
+                        android:text="@string/handleResultInputTime" />
+                
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+                    
+                        <TextView
+                            android:id="@+id/tv_text29"
+                            style="@style/LV_TableTopInnersTV"
+                            android:text="@string/tv_text29" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center" >
+        
+        <Button
+            android:id="@+id/btn_dialogClose"
+            style="@style/BG_TC_TS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close" />
+    </LinearLayout>
+
+</LinearLayout>
